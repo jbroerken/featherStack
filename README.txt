@@ -101,3 +101,10 @@ It is also quite flexible, allowing for changes with few changes in the code ins
 and layout files at the same time, reducing the expirienced Workload.
 A relatively simple project like featherStack therefore allowed for a secure development road with SwiftUI.
 
+##
+#  3rd Party Components
+##
+
+The featherStack app uses the following third party components:
+
+- Zip by Roy Marmelstein

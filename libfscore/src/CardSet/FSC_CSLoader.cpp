@@ -32,6 +32,8 @@
 // Pre-defined
 #ifndef FSC_CL_THREAD_COUNT
     #define FSC_CL_THREAD_COUNT                      1
+#elif FSC_CL_THREAD_COUNT < 0
+    #define FSC_CL_THREAD_COUNT                      1
 #elif FSC_CL_THREAD_COUNT > 2
     #define FSC_CL_THREAD_COUNT                      2
 #endif
@@ -42,7 +44,7 @@ namespace
     enum Identifier
     {
         TYPE = 0,
-        DATA_PATH = 1,
+        DATA = 1,
         QUESTION = 2,
         ANSWER = 3,
         
@@ -132,7 +134,7 @@ void FSC_CSLoader::ThreadCardSetup(FSC_Card* p_Card, std::string const& s_FilePa
         p_Card->s_FilePath = s_FilePath;
         p_Card->i_CardType = static_cast<int>(std::stoi(c_File.GetValue(p_MainBlock,
                                                                         p_Identifier[TYPE])));
-        p_Card->s_Data = c_File.GetValue(p_MainBlock, p_Identifier[DATA_PATH]);
+        p_Card->s_Data = c_File.GetValue(p_MainBlock, p_Identifier[DATA]);
         p_Card->s_Question = c_File.GetValue(p_MainBlock, p_Identifier[QUESTION]);
         p_Card->s_Answer = c_File.GetValue(p_MainBlock, p_Identifier[ANSWER]);
     }
