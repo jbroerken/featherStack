@@ -1,0 +1,4 @@
+This app requires the "Zip" Library created by Roy Marmelstein.
+
+The source can be found here:
+https://github.com/marmelroy/Zip

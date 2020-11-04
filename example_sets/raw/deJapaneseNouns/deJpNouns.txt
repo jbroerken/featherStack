@@ -1,0 +1,7 @@
+"CardSet" = {
+	"Title" = "Japanische Nomen"
+	"Subtitle" = "Japanische Nomen zum Übersetzen"
+	"Directory" = "deJpNouns"
+	"Set_File" = "Set.txt"
+	"Icon_File" = "Banner.png"
+}

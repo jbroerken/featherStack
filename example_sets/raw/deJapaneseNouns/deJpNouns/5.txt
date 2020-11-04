@@ -1,0 +1,6 @@
+"Card" = {
+    "Type" = "0"
+    "Data" = "水"
+    "Question" = "Wie lautet die deutsche Übersetzung?"
+    "Answer" = "Wasser"
+}

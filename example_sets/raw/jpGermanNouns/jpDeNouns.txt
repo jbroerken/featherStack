@@ -1,0 +1,7 @@
+"CardSet" = {
+	"Title" = "ドイツ語の単語"
+	"Subtitle" = "ドイツ語の単語で勉強します"
+	"Directory" = "jpDeNouns"
+	"Set_File" = "Set.txt"
+	"Icon_File" = "Banner.png"
+}

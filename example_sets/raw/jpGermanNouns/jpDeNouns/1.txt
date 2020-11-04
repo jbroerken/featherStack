@@ -1,0 +1,6 @@
+"Card" = {
+    "Type" = "0"
+    "Data" = "Auto, Fahrzeug"
+    "Question" = "これは日本語で何と言いますか。"
+    "Answer" = "車"
+}

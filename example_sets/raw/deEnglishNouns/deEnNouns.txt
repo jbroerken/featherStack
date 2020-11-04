@@ -1,0 +1,7 @@
+"CardSet" = {
+	"Title" = "Englische Nomen"
+	"Subtitle" = "Englische Nomen zum Übersetzen"
+	"Directory" = "deEnNouns"
+	"Set_File" = "Set.txt"
+	"Icon_File" = "Banner.png"
+}

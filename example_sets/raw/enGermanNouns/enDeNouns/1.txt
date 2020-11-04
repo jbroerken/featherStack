@@ -1,0 +1,6 @@
+"Card" = {
+    "Type" = "0"
+    "Data" = "Auto"
+    "Question" = "What is the english translation?"
+    "Answer" = "Car"
+}

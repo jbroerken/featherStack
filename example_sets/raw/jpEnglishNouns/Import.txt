@@ -1,0 +1,2 @@
+jpEnNouns.txt
+jpEnNouns

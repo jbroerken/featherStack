@@ -1,0 +1,7 @@
+"CardSet" = {
+	"Title" = "German Nouns"
+	"Subtitle" = "German Practice Nouns"
+	"Directory" = "enDeNouns"
+	"Set_File" = "Set.txt"
+	"Icon_File" = "Banner.png"
+}

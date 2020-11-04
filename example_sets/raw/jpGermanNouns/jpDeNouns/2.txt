@@ -1,0 +1,6 @@
+"Card" = {
+    "Type" = "1"
+    "Data" = "Assets/Bike.png"
+    "Question" = "これは何ですか。"
+    "Answer" = "Fahrrad"
+}

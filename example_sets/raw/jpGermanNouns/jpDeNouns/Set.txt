@@ -1,0 +1,8 @@
+"Cards" = {
+    "File" = "1.txt"
+    "File" = "2.txt"
+    "File" = "3.txt"
+    "File" = "4.txt"
+    "File" = "5.txt"
+    "File" = "6.txt"
+}

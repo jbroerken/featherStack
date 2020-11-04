@@ -1,0 +1,6 @@
+"Card" = {
+    "Type" = "1"
+    "Data" = "Assets/Bike.png"
+    "Question" = "How is this object called?"
+    "Answer" = "自転車 (じてんしゃ)"
+}

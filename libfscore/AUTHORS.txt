@@ -1,0 +1,7 @@
+###
+#
+#  libfscore Authors
+#
+###
+
+Jens Brörken <jens.broerken@hs-augsburg.de>

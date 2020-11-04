@@ -1,0 +1,9 @@
+###
+#
+#  featherStack-iOS ToDo
+#
+###
+
+- Implement Sound Asset Card Support.
+- Better Importing.
+- Add Horizontal Swipe Menu for "Last Added" and "Last Used".

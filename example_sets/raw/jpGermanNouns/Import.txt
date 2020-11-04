@@ -1,0 +1,2 @@
+jpDeNouns.txt
+jpDeNouns

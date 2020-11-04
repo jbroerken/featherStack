@@ -1,0 +1,6 @@
+"Card" = {
+    "Type" = "1"
+    "Data" = "Assets/Apple.png"
+    "Question" = "How is this object called?"
+    "Answer" = "Apfel"
+}

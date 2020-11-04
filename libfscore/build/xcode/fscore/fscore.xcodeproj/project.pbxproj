@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4655FB82542FA04009F0CC0 /* FSC_Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4655F9D2542FA04009F0CC0 /* FSC_Card.cpp */; };
+		B4655FB92542FA04009F0CC0 /* FSC_CSLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4655F9F2542FA04009F0CC0 /* FSC_CSLoader.cpp */; };
+		B4655FBA2542FA04009F0CC0 /* FSC_CSStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FA02542FA04009F0CC0 /* FSC_CSStorage.h */; };
+		B4655FBB2542FA04009F0CC0 /* FSC_CSStorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4655FA12542FA04009F0CC0 /* FSC_CSStorage.cpp */; };
+		B4655FBC2542FA04009F0CC0 /* FSC_CSList.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FA22542FA04009F0CC0 /* FSC_CSList.h */; };
+		B4655FBD2542FA04009F0CC0 /* FSC_CSLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FA32542FA04009F0CC0 /* FSC_CSLoader.h */; };
+		B4655FBE2542FA04009F0CC0 /* FSC_CSList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4655FA42542FA04009F0CC0 /* FSC_CSList.cpp */; };
+		B4655FBF2542FA04009F0CC0 /* FSC_ValueFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4655FA62542FA04009F0CC0 /* FSC_ValueFile.cpp */; };
+		B4655FC02542FA04009F0CC0 /* FSC_ValueFile.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FA72542FA04009F0CC0 /* FSC_ValueFile.h */; };
+		B4655FC12542FA04009F0CC0 /* FSC_Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4655FA82542FA04009F0CC0 /* FSC_Context.cpp */; };
+		B4655FC22542FA04009F0CC0 /* FSC_CardData.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FA92542FA04009F0CC0 /* FSC_CardData.h */; };
+		B4655FC32542FA04009F0CC0 /* FSC_CardSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4655FAA2542FA04009F0CC0 /* FSC_CardSet.cpp */; };
+		B4655FC42542FA04009F0CC0 /* FSC_ContextData.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FAB2542FA04009F0CC0 /* FSC_ContextData.h */; };
+		B4655FC52542FA04009F0CC0 /* FSC_ErrorInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FAD2542FA04009F0CC0 /* FSC_ErrorInternal.h */; };
+		B4655FC62542FA04009F0CC0 /* FSC_Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4655FAE2542FA04009F0CC0 /* FSC_Exception.cpp */; };
+		B4655FC72542FA04009F0CC0 /* FSC_Error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4655FAF2542FA04009F0CC0 /* FSC_Error.cpp */; };
+		B4655FC82542FA04009F0CC0 /* FSC_Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FB02542FA04009F0CC0 /* FSC_Exception.h */; };
+		B4655FC92542FA04009F0CC0 /* FSC_CardSetData.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FB12542FA04009F0CC0 /* FSC_CardSetData.h */; };
+		B4655FCA2542FA04009F0CC0 /* FSC_CardSet.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FB32542FA04009F0CC0 /* FSC_CardSet.h */; };
+		B4655FCB2542FA04009F0CC0 /* FSC_Card.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FB42542FA04009F0CC0 /* FSC_Card.h */; };
+		B4655FCC2542FA04009F0CC0 /* FSC_Context.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FB52542FA04009F0CC0 /* FSC_Context.h */; };
+		B4655FCD2542FA04009F0CC0 /* FSC_Error.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FB72542FA04009F0CC0 /* FSC_Error.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B4655F942542F9F3009F0CC0 /* libfscore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfscore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4655F9D2542FA04009F0CC0 /* FSC_Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FSC_Card.cpp; sourceTree = "<group>"; };
+		B4655F9F2542FA04009F0CC0 /* FSC_CSLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FSC_CSLoader.cpp; sourceTree = "<group>"; };
+		B4655FA02542FA04009F0CC0 /* FSC_CSStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_CSStorage.h; sourceTree = "<group>"; };
+		B4655FA12542FA04009F0CC0 /* FSC_CSStorage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FSC_CSStorage.cpp; sourceTree = "<group>"; };
+		B4655FA22542FA04009F0CC0 /* FSC_CSList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_CSList.h; sourceTree = "<group>"; };
+		B4655FA32542FA04009F0CC0 /* FSC_CSLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_CSLoader.h; sourceTree = "<group>"; };
+		B4655FA42542FA04009F0CC0 /* FSC_CSList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FSC_CSList.cpp; sourceTree = "<group>"; };
+		B4655FA62542FA04009F0CC0 /* FSC_ValueFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FSC_ValueFile.cpp; sourceTree = "<group>"; };
+		B4655FA72542FA04009F0CC0 /* FSC_ValueFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_ValueFile.h; sourceTree = "<group>"; };
+		B4655FA82542FA04009F0CC0 /* FSC_Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FSC_Context.cpp; sourceTree = "<group>"; };
+		B4655FA92542FA04009F0CC0 /* FSC_CardData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_CardData.h; sourceTree = "<group>"; };
+		B4655FAA2542FA04009F0CC0 /* FSC_CardSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FSC_CardSet.cpp; sourceTree = "<group>"; };
+		B4655FAB2542FA04009F0CC0 /* FSC_ContextData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_ContextData.h; sourceTree = "<group>"; };
+		B4655FAD2542FA04009F0CC0 /* FSC_ErrorInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_ErrorInternal.h; sourceTree = "<group>"; };
+		B4655FAE2542FA04009F0CC0 /* FSC_Exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FSC_Exception.cpp; sourceTree = "<group>"; };
+		B4655FAF2542FA04009F0CC0 /* FSC_Error.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FSC_Error.cpp; sourceTree = "<group>"; };
+		B4655FB02542FA04009F0CC0 /* FSC_Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_Exception.h; sourceTree = "<group>"; };
+		B4655FB12542FA04009F0CC0 /* FSC_CardSetData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_CardSetData.h; sourceTree = "<group>"; };
+		B4655FB32542FA04009F0CC0 /* FSC_CardSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_CardSet.h; sourceTree = "<group>"; };
+		B4655FB42542FA04009F0CC0 /* FSC_Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_Card.h; sourceTree = "<group>"; };
+		B4655FB52542FA04009F0CC0 /* FSC_Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_Context.h; sourceTree = "<group>"; };
+		B4655FB72542FA04009F0CC0 /* FSC_Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_Error.h; sourceTree = "<group>"; };
+		B4EC412C25431E3A00B0E081 /* FSC_Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSC_Common.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4655F922542F9F3009F0CC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4655F8B2542F9F3009F0CC0 = {
+			isa = PBXGroup;
+			children = (
+				B4655FB22542FA04009F0CC0 /* include */,
+				B4655F9C2542FA04009F0CC0 /* src */,
+				B4655F952542F9F3009F0CC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4655F952542F9F3009F0CC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4655F942542F9F3009F0CC0 /* libfscore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4655F9C2542FA04009F0CC0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B4655FAC2542FA04009F0CC0 /* Error */,
+				B4655FA52542FA04009F0CC0 /* File */,
+				B4655F9E2542FA04009F0CC0 /* CardSet */,
+				B4655F9D2542FA04009F0CC0 /* FSC_Card.cpp */,
+				B4655FA92542FA04009F0CC0 /* FSC_CardData.h */,
+				B4655FAA2542FA04009F0CC0 /* FSC_CardSet.cpp */,
+				B4655FB12542FA04009F0CC0 /* FSC_CardSetData.h */,
+				B4655FA82542FA04009F0CC0 /* FSC_Context.cpp */,
+				B4655FAB2542FA04009F0CC0 /* FSC_ContextData.h */,
+			);
+			name = src;
+			path = ../../../src;
+			sourceTree = "<group>";
+		};
+		B4655F9E2542FA04009F0CC0 /* CardSet */ = {
+			isa = PBXGroup;
+			children = (
+				B4655FA12542FA04009F0CC0 /* FSC_CSStorage.cpp */,
+				B4655FA02542FA04009F0CC0 /* FSC_CSStorage.h */,
+				B4655F9F2542FA04009F0CC0 /* FSC_CSLoader.cpp */,
+				B4655FA32542FA04009F0CC0 /* FSC_CSLoader.h */,
+				B4655FA42542FA04009F0CC0 /* FSC_CSList.cpp */,
+				B4655FA22542FA04009F0CC0 /* FSC_CSList.h */,
+			);
+			path = CardSet;
+			sourceTree = "<group>";
+		};
+		B4655FA52542FA04009F0CC0 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				B4655FA62542FA04009F0CC0 /* FSC_ValueFile.cpp */,
+				B4655FA72542FA04009F0CC0 /* FSC_ValueFile.h */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		B4655FAC2542FA04009F0CC0 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				B4655FAF2542FA04009F0CC0 /* FSC_Error.cpp */,
+				B4655FAD2542FA04009F0CC0 /* FSC_ErrorInternal.h */,
+				B4655FAE2542FA04009F0CC0 /* FSC_Exception.cpp */,
+				B4655FB02542FA04009F0CC0 /* FSC_Exception.h */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		B4655FB22542FA04009F0CC0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B4655FB62542FA04009F0CC0 /* Error */,
+				B4655FB42542FA04009F0CC0 /* FSC_Card.h */,
+				B4655FB32542FA04009F0CC0 /* FSC_CardSet.h */,
+				B4655FB52542FA04009F0CC0 /* FSC_Context.h */,
+				B4EC412C25431E3A00B0E081 /* FSC_Common.h */,
+			);
+			name = include;
+			path = ../../../include;
+			sourceTree = "<group>";
+		};
+		B4655FB62542FA04009F0CC0 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				B4655FB72542FA04009F0CC0 /* FSC_Error.h */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B4655F902542F9F3009F0CC0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4655FBA2542FA04009F0CC0 /* FSC_CSStorage.h in Headers */,
+				B4655FC22542FA04009F0CC0 /* FSC_CardData.h in Headers */,
+				B4655FC52542FA04009F0CC0 /* FSC_ErrorInternal.h in Headers */,
+				B4655FCC2542FA04009F0CC0 /* FSC_Context.h in Headers */,
+				B4655FCD2542FA04009F0CC0 /* FSC_Error.h in Headers */,
+				B4655FC02542FA04009F0CC0 /* FSC_ValueFile.h in Headers */,
+				B4655FBD2542FA04009F0CC0 /* FSC_CSLoader.h in Headers */,
+				B4655FBC2542FA04009F0CC0 /* FSC_CSList.h in Headers */,
+				B4655FC92542FA04009F0CC0 /* FSC_CardSetData.h in Headers */,
+				B4655FC42542FA04009F0CC0 /* FSC_ContextData.h in Headers */,
+				B4655FCB2542FA04009F0CC0 /* FSC_Card.h in Headers */,
+				B4655FCA2542FA04009F0CC0 /* FSC_CardSet.h in Headers */,
+				B4655FC82542FA04009F0CC0 /* FSC_Exception.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B4655F932542F9F3009F0CC0 /* fscore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4655F982542F9F3009F0CC0 /* Build configuration list for PBXNativeTarget "fscore" */;
+			buildPhases = (
+				B4655F902542F9F3009F0CC0 /* Headers */,
+				B4655F912542F9F3009F0CC0 /* Sources */,
+				B4655F922542F9F3009F0CC0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fscore;
+			productName = fscore;
+			productReference = B4655F942542F9F3009F0CC0 /* libfscore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4655F8C2542F9F3009F0CC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					B4655F932542F9F3009F0CC0 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = B4655F8F2542F9F3009F0CC0 /* Build configuration list for PBXProject "fscore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4655F8B2542F9F3009F0CC0;
+			productRefGroup = B4655F952542F9F3009F0CC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4655F932542F9F3009F0CC0 /* fscore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4655F912542F9F3009F0CC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4655FC12542FA04009F0CC0 /* FSC_Context.cpp in Sources */,
+				B4655FC72542FA04009F0CC0 /* FSC_Error.cpp in Sources */,
+				B4655FBE2542FA04009F0CC0 /* FSC_CSList.cpp in Sources */,
+				B4655FBB2542FA04009F0CC0 /* FSC_CSStorage.cpp in Sources */,
+				B4655FB82542FA04009F0CC0 /* FSC_Card.cpp in Sources */,
+				B4655FC62542FA04009F0CC0 /* FSC_Exception.cpp in Sources */,
+				B4655FBF2542FA04009F0CC0 /* FSC_ValueFile.cpp in Sources */,
+				B4655FC32542FA04009F0CC0 /* FSC_CardSet.cpp in Sources */,
+				B4655FB92542FA04009F0CC0 /* FSC_CSLoader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B4655F962542F9F3009F0CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B4655F972542F9F3009F0CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		B4655F992542F9F3009F0CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3JQ26ZNBA;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B4655F9A2542F9F3009F0CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3JQ26ZNBA;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4655F8F2542F9F3009F0CC0 /* Build configuration list for PBXProject "fscore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4655F962542F9F3009F0CC0 /* Debug */,
+				B4655F972542F9F3009F0CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4655F982542F9F3009F0CC0 /* Build configuration list for PBXNativeTarget "fscore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4655F992542F9F3009F0CC0 /* Debug */,
+				B4655F9A2542F9F3009F0CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4655F8C2542F9F3009F0CC0 /* Project object */;
+}

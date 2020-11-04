@@ -1,0 +1,4 @@
+This app requires the "libfscore" Library created by Jens Broerken.
+
+The source can be found here:
+https://github.com/jbroerken/featherStack

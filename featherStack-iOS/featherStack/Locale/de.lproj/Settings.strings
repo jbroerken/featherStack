@@ -1,0 +1,101 @@
+//
+//  Settings.strings
+//
+//  Copyright (C) 2020 Jens Broerken
+//  <jens.broerken@hs-augsburg.de>
+//
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 2 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program; if not, write to the Free Software
+//  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+
+//************************************************************
+// SettingsView.swift
+//************************************************************
+
+// Title
+"@SETTINGS_TITLE" = "Einstellungen";
+
+// Buttons
+"@SETTINGS_CARD" = "Karten";
+"@SETTINGS_SEARCH" = "Suche";
+"@SETTINGS_ABOUT" = "Information";
+"@SETTINGS_LICENSE" = "Lizenz";
+
+//************************************************************
+// SettingsCardView.swift
+//************************************************************
+
+// Title
+"@CARD_TITLE" = "Karten";
+
+// Swipe Section
+"@CARD_SWIPE_SECTION" = "Wischrichtung bei richtiger Antwort";
+"@CARD_SWIPE_RIGHT" = "Rechts";
+"@CARD_SWIPE_LEFT" = "Links";
+"@CARD_SWIPE_INFO" = "Die hier angegebene Richtung bestimmt welche Wischrichtung als korrekte Antwort gesehen wird.";
+
+//************************************************************
+// SettingsSearchView.swift
+//************************************************************
+
+// Title
+"@SEARCH_TITLE" = "Suche";
+
+// Text Reset
+"@SEARCH_CLEAR_SECTION" = "Eingabe bei Auswahl zurücksetzten";
+"@SEARCH_CLEAR_CHOICE" = "Eingabe zurücksetzen";
+"@SEARCH_CLEAR_INFO" = "Diese Einstellung setzt den Text im Suchfeld zurück wenn eine Sammlung ausgewählt wurde.";
+
+// Capitalization Check
+"@SEARCH_CAPITALIZATION_SECTION" = "Texteingabe";
+"@SEARCH_CAPITALIZATION_CHOICE" = "Exakte Eingabe";
+"@SEARCH_CAPITALIZATION_INFO" = "Gesuchter Text ignoriert die Groß- und Kleinschreibung je nach gewählter Einstellung.";
+
+//************************************************************
+// SettingsAboutView.swift
+//************************************************************
+
+// Title
+"@ABOUT_TITLE" = "Information";
+
+// App Description
+"@ABOUT_APP_TITLE" = "featherStack";
+"@ABOUT_APP_DESC" = "The lightweight flash card reader";
+
+// Source Location
+"@ABOUT_SOURCE_INFO" = "Der Source Code für dieses Projekt ist auf GitHub verfügbar:";
+"@ABOUT_SOURCE_WEB" = "https://www.github.com/jbroerken/featherStack";
+
+// Copyright
+"@ABOUT_COPYRIGHT_DEVELOPER" = "Entwickelt von Jens Brörken";
+"@ABOUT_COPYRIGHT_SIGNATURE" = "(C) 2020 Jens Brörken";
+
+// Extra
+"@ABOUT_COPYRIGHT_EXTRA" = "Diese Software verwendet die folgendenden Komponenten Dritter:";
+"@ABOUT_COPYRIGHT_EXRTA_ZIP" = "Zip von Roy Marmelstein";
+
+//************************************************************
+// SettingsLicenseView.swift
+//************************************************************
+
+// Title
+"@LICENSE_TITLE" = "Lizenz";
+
+// featherStack
+"@LICENSE_APP" = "App";
+"@LICENSE_APP_TITLE" = "featherStack";
+
+// 3rd Party
+"@LICENSE_LIBRARY" = "Dritte";
+"@LICENSE_LIBRARY_ZIP" = "Zip Library";
