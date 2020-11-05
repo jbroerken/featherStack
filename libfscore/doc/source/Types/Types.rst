@@ -20,4 +20,7 @@ Library Types
 
 Internal Types
 --------------
-There are no special types defined internally.
+.. toctree::
+  :maxdepth: 1
+
+  src/File/FSC_ValueFile/Value
