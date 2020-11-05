@@ -1,0 +1,291 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>libfscore &mdash; libfscore 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Building" href="Building/Building.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home" alt="Documentation Home"> libfscore
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Building/Building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Usage/Usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Files/Files.html">Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Classes/Classes.html">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Structs/Structs.html">Structs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Namespaces/Namespaces.html">Namespaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Enumerations/Enumerations.html">Enumerations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Types/Types.html">Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Macros/Macros.html">Macros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Functions/Functions.html">Functions</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">libfscore</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>libfscore</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="libfscore">
+<h1>libfscore<a class="headerlink" href="#libfscore" title="Permalink to this headline">¶</a></h1>
+<img alt="_images/logo.png" class="align-center" src="_images/logo.png" />
+<p>libfscore is an open source library which is intended to provide core
+functionality for both card loading and set management. The library is meant
+to support as many host platforms as possible without incorporating orther
+3rd party libraries, relying on the standard programming language libraries
+only if possible.</p>
+<p>This documentation includes listings for the internal functions, enumerations,
+etc. used by the library itself. These are not meant to be used directly for
+application development but as information for library development.</p>
+<p>As such, this documentation is both aimed at developers wanting to write their
+own apps as well as library developers wishing to improve on the libfscore
+source.</p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Building/Building.html">Building</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Building/Building.html#supported-platforms">Supported Platforms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Building/Building.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Building/Building.html#build-tools">Build Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Building/Building.html#build-process">Build Process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Usage/Usage.html">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Usage/Usage.html#context">Context</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Usage/Usage.html#card-sets">Card Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Usage/Usage.html#cards">Cards</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Files/Files.html">Files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Files/Context/ContextFile.html">Context Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Files/CardSet/CardSetFile.html">Card Set Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Files/Card/CardFile.html">Card Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Files/Import/ImportFile.html">Import Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Classes/Classes.html">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Classes/Classes.html#library-classes">Library Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Classes/Classes.html#internal-classes">Internal Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Structs/Structs.html">Structs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Structs/Structs.html#library-structs">Library Structs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Structs/Structs.html#internal-structs">Internal Structs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Namespaces/Namespaces.html">Namespaces</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Namespaces/Namespaces.html#library-namespaces">Library Namespaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Namespaces/Namespaces.html#internal-namespaces">Internal Namespaces</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Enumerations/Enumerations.html">Enumerations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Enumerations/Enumerations.html#library-enumerations">Library Enumerations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Enumerations/Enumerations.html#internal-enumerations">Internal Enumerations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Types/Types.html">Types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Types/Types.html#library-types">Library Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Types/Types.html#internal-types">Internal Types</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Macros/Macros.html">Macros</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Macros/Macros.html#library-macros">Library Macros</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Macros/Macros.html#internal-macros">Internal Macros</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Functions/Functions.html">Functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Functions/Functions.html#library-functions">Library Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Functions/Functions.html#internal-functions">Internal Functions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Building/Building.html" class="btn btn-neutral float-right" title="Building" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Jens Broerken
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

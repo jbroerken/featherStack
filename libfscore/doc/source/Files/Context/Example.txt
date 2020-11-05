@@ -1,0 +1,15 @@
+"CardSet" = {
+	"Title" = "Japanese Nouns"
+	"Subtitle" = "Japanese Practice Nouns"
+	"Directory" = "enJpNouns"
+	"Set_File" = "Set.txt"
+	"Icon_File" = "Banner.png"
+}
+
+"CardSet" = {
+	"Title" = "German Nouns"
+	"Subtitle" = "German Practice Nouns"
+	"Directory" = "enDeNouns"
+	"Set_File" = "Set.txt"
+	"Icon_File" = "Banner.png"
+}

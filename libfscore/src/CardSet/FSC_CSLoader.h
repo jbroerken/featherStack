@@ -189,19 +189,6 @@ private:
     static void ThreadLoad(FSC_CSLoader* p_Instance) noexcept;
     
     //*************************************************************************************
-    // Add Card
-    //*************************************************************************************
-    
-    /**
-     *  Add a card to a given storage container. This function is thread safe.
-     *
-     *  \param c_Storage The stroage container to add to.
-     *  \param p_Card The card to add. The pointer is consumed on success.
-     */
-    
-    inline void AddToStorage(FSC_CSStorage& c_Storage, FSC_Card*& p_Card) noexcept;
-    
-    //*************************************************************************************
     // Data
     //*************************************************************************************
     
