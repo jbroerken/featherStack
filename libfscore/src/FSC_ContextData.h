@@ -80,6 +80,7 @@ typedef struct FSC_Context_t
      *
      *  \param s_DirPath The path of the context data.
      *  \param s_FilePath The path of the context file.
+     *  \param us_CacheLimit The cache limit to initialize newly created sets with.
      */
     
     FSC_Context_t(std::string const& s_DirPath,

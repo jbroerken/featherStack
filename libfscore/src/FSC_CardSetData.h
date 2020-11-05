@@ -125,19 +125,4 @@ protected:
 
 extern bool FSC_CSUsable(const FSC_CardSet* p_Set);
 
-//*************************************************************************************
-// Update
-//*************************************************************************************
-
-/**
- *  Update a given card set.
- *
- *  \param p_Set The card set to update.
- *  \param s_DirPath The path to the card set directory.
- *  \param s_FileName The name of the card set file.
- *  \param s_Title The title of the card set.
- */
-
-extern void FSC_CSUpdate(FSC_CardSet* p_Set, std::string const& s_DirPath, std::string const& s_FileName, std::string const& s_Title);
-
 #endif /* FSC_CardSetData_h */

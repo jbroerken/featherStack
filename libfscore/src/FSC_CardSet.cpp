@@ -61,7 +61,7 @@ FSC_CardSet_t::~FSC_CardSet_t() noexcept
 // Update
 //*************************************************************************************
 
-void FSC_CardSet::Reload(std::string const& s_DirPath, std::string const& s_FilePath, std::string const& s_Title)
+void FSC_CardSet_t::Reload(std::string const& s_DirPath, std::string const& s_FilePath, std::string const& s_Title)
 {
     // Replace card set info, but keep cache
     this->s_DirPath = s_DirPath;
@@ -79,7 +79,7 @@ void FSC_CardSet::Reload(std::string const& s_DirPath, std::string const& s_File
     }
 }
 
-void FSC_CardSet::CardSetup() noexcept
+void FSC_CardSet_t::CardSetup() noexcept
 {
     us_CardCountTotal = c_List.GetCount();
     us_CardCountRemaining = us_CardCountTotal;

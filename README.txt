@@ -6,7 +6,7 @@
 
 featherStack is a lightweight flash card app, allowing for cross-platform development by moving most functionality in a C++ library. This allows your card set to work across platforms while still making use of platform-specific features in the actual
 app by relying on the widely available C-Binding mechanism found in languages such as Swift and Objective-C (iOS, macOS),
-Kotlin (Android) and C++ (Windows, Linux).
+Kotlin (Android) and C++ (Linux).
 
 ##
 #  Easy, Content Focused Interface
@@ -107,4 +107,4 @@ A relatively simple project like featherStack therefore allowed for a secure dev
 
 The featherStack app uses the following third party components:
 
-- Zip by Roy Marmelstein
+- Zip by Roy Marmelstein (https://github.com/marmelroy/Zip)
