@@ -78,29 +78,6 @@ This approach was chosen for two reasons: To be able to quickly port the basic f
 allowing for files to be reused and exchanged between platforms. This approach also improves maintanability, since 
 updating the basic functionality in a library often only requires a recompilation.
 
-Why C++ and not Swift or C?
----------------------------
-C++ compilers are commonplace and the language itself allows for OOP programming with standards found on most
-platforms.
-
-Why are cards and card sets returned to the library?
-----------------------------------------------------
-One issue coming from chosing a close relative to C (and exposing library functions as C functions) is the usage of raw
-pointers. It was considered preferable to not store these in multiple places, instead relying on individual management.
-Returning them also allows for saving allocations.
-
-Why use context instances?
---------------------------
-The context instance design was chosen for applications supporting multiple windows which may each contain a different card
-set. This means that the data managed by the context wont be overwritten from multiple places, turning management of data into a nightmare. Context data can still be freely exchanged between multiple context instances.
-
-SwiftUI is still pretty young, why was it used here?
-----------------------------------------------------
-While being still realitvely new, SwiftUI brings a lot of quick and clean UI building capabilities with it.
-It is also quite flexible, allowing for changes with few changes in the code instead of working with both code
-and layout files at the same time, reducing the expirienced Workload.
-A relatively simple project like featherStack therefore allowed for a secure development road with SwiftUI.
-
 ##
 #  3rd Party Components
 ##
