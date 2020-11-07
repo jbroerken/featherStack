@@ -15,6 +15,8 @@ Library Types
 
   include/FSC_Card/FSC_CardOpaque
   include/FSC_CardSet/FSC_CardSetOpaque
+  include/FSC_CardSet/FSC_Destination
+  include/FSC_CardSet/FSC_Callback
   include/FSC_Context/FSC_ContextOpaque
 
 

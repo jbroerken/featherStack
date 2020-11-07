@@ -16,7 +16,8 @@ Syntax
 ------
 .. code-block:: c
 
-    bool Claim(FSC_CardOpaque**& p_Destination, 
+    bool Claim(FSC_Callback& p_Callback, 
+               FSC_Destination& p_Destination, 
                std::string& s_FilePath) noexcept;
 
 
@@ -27,8 +28,12 @@ Parameters
 
     * - Parameter
       - Description
+    * - p_Callback
+      - The :doc:`callback <../../../../../Types/include/FSC_CardSet/FSC_Callback>`
+        to perform.
     * - p_Destination
-      - The location of the :doc:`job <../../../../../Types/include/FSC_Card/FSC_CardOpaque>`.
+      - The :doc:`destination <../../../../../Types/include/FSC_CardSet/FSC_Destination>`
+        to hand to the callback.
     * - s_FilePath
       - The UTF-8 card file path s_FilePath to use.
 

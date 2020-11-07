@@ -87,10 +87,11 @@ public:
      *  Load a requested card. This function is thread safe.
      *
      *  \param s_FilePath The file path to the card file requested.
-     *  \param p_Destination The destination for the card loading result.
+     *  \param p_Callback The callback for the card loading result.
+     *  \param p_Destination The card destination to pass to the callback.
      */
     
-    void LoadCard(std::string const& s_FilePath, FSC_CardOpaque** p_Destination = NULL) noexcept;
+    void LoadCard(std::string const& s_FilePath, FSC_Callback p_Callback, FSC_Destination p_Destination) noexcept;
     
     //*************************************************************************************
     // Getters
@@ -137,23 +138,25 @@ private:
         /**
          *  Add a job. This function is thread safe.
          *
-         *  \param p_Destination The destination for the card load.
+         *  \param p_Callback The callback for the card load.
+         *  \param p_Destination The card destination to pass to the callback.
          *  \param s_FilePath The path to the card file to load.
          *  \param b_Front Wether to add the job at the start of the job list (next task) or not.
          */
         
-        void Add(FSC_CardOpaque** const& p_Destination, std::string const& s_FilePath, bool b_Front = false) noexcept;
+        void Add(FSC_Callback const& p_Callback, FSC_Destination& p_Destination, std::string const& s_FilePath, bool b_Front = false) noexcept;
         
         /**
          *  Claim a job, removing it from the job list. This function is thread safe.
          *
-         *  \param p_Destination A reference to the location to store the card adress in.
+         *  \param p_Callback A reference to the callback to store the card adress in.
+         *  \param p_Destination The card destination to pass to the callback.
          *  \param s_FilePath A reference to the file path location to write to.
          *
          *  \return true if a job was claimed, false if not.
          */
         
-        bool Claim(FSC_CardOpaque**& p_Destination, std::string& s_FilePath) noexcept;
+        bool Claim(FSC_Callback& p_Callback, FSC_Destination& p_Destination, std::string& s_FilePath) noexcept;
         
     private:
         
@@ -163,7 +166,7 @@ private:
         
         std::mutex c_Mutex;
         
-        std::list<std::pair<FSC_CardOpaque**, std::string>> l_Job;
+        std::list<std::pair<std::pair<FSC_Callback, FSC_Destination>, std::string>> l_Job;
         
     protected:
         

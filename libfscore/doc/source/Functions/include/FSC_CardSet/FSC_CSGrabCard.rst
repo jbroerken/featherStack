@@ -16,7 +16,8 @@ Syntax
 .. code-block:: c
 
     void FSC_CSGrabCard(FSC_CardSetOpaque* FSC_NONNULL p_Set, 
-                        FSC_CardOpaque* FSC_NULLABLE * FSC_NULLABLE p_Destination);
+                        FSC_Callback FSC_NULLABLE p_Callback, 
+                        FSC_Destination FSC_NULLABLE p_Destination);
 
 
 Parameters
@@ -29,9 +30,12 @@ Parameters
     * - p_Set
       - The :doc:`card set <../../../Types/include/FSC_CardSet/FSC_CardSetOpaque>` 
         to grab from.
+    * - p_Callback
+      - The :doc:`callback <../../../Types/include/FSC_CardSet/FSC_Callback>` 
+        to perform after loading.
     * - p_Destination
-      - The :doc:`card <../../../Types/include/FSC_Card/FSC_CardOpaque>` 
-        destination to write to.
+      - The :doc:`destination <../../../Types/include/FSC_CardSet/FSC_Destination>` 
+        to hand to the callback.
 
 
 Return Value
@@ -41,6 +45,8 @@ None.
 Remarks
 -------
 * The current address on the given destination will not be freed.
+* Passing NULL for either the callback or destination will cause the callback 
+  to be ignored. The card then will be added to the cache directly.
 
 Code Examples
 -------------

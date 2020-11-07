@@ -41,6 +41,9 @@ extern "C"
 
     typedef struct FSC_CardSet_t FSC_CardSetOpaque;
     
+    typedef FSC_CardOpaque* FSC_NULLABLE * FSC_Destination;
+    typedef void (*FSC_Callback)(FSC_CardOpaque* FSC_NULLABLE p_Source, FSC_CardOpaque* FSC_NULLABLE * FSC_NULLABLE p_Destination);
+    
     //*************************************************************************************
     // Grab
     //*************************************************************************************
@@ -49,10 +52,11 @@ extern "C"
      *  Grab a random card from the set.
      *
      *  \param p_Set The set to grab from.
-     *  \param p_Destination The destination to write the card address to.
+     *  \param p_Callback The callback to execute on card load.
+     *  \param p_Destination The load result destination.
      */
     
-    extern void FSC_CSGrabCard(FSC_CardSetOpaque* FSC_NONNULL p_Set, FSC_CardOpaque* FSC_NULLABLE * FSC_NULLABLE p_Destination);
+    extern void FSC_CSGrabCard(FSC_CardSetOpaque* FSC_NONNULL p_Set, FSC_Callback FSC_NULLABLE p_Callback, FSC_Destination FSC_NULLABLE p_Destination);
     
     //*************************************************************************************
     // Return

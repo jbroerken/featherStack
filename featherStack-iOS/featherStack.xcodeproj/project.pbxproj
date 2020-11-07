@@ -7,45 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B411831E253369330002EA4A /* ActiveSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B411831D253369330002EA4A /* ActiveSetView.swift */; };
-		B411833025338FCE0002EA4A /* ActiveSet.strings in Resources */ = {isa = PBXBuildFile; fileRef = B411833225338FCE0002EA4A /* ActiveSet.strings */; };
-		B413E85A25364B9600B741A2 /* SettingsVersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B413E85925364B9600B741A2 /* SettingsVersionView.swift */; };
-		B427A7FE253204950028D0C8 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427A7FD253204950028D0C8 /* SearchBarView.swift */; };
-		B435B8D425339CFE00C2B0A7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435B8D325339CFE00C2B0A7 /* CardView.swift */; };
-		B453462325323CC0005EC33D /* SetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453462225323CC0005EC33D /* SetListView.swift */; };
-		B453462825323D3B005EC33D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453462725323D3B005EC33D /* SettingsView.swift */; };
+		B411831E253369330002EA4A /* VActiveSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B411831D253369330002EA4A /* VActiveSet.swift */; };
+		B411833025338FCE0002EA4A /* SActiveSet.strings in Resources */ = {isa = PBXBuildFile; fileRef = B411833225338FCE0002EA4A /* SActiveSet.strings */; };
+		B413E85A25364B9600B741A2 /* VSettingsVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B413E85925364B9600B741A2 /* VSettingsVersion.swift */; };
+		B41BD36F2555DA1500F34F56 /* VMCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41BD36E2555DA1500F34F56 /* VMCard.swift */; };
+		B427A7FE253204950028D0C8 /* VSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427A7FD253204950028D0C8 /* VSearchBar.swift */; };
+		B435B8D425339CFE00C2B0A7 /* VCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435B8D325339CFE00C2B0A7 /* VCard.swift */; };
+		B453462325323CC0005EC33D /* VSetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453462225323CC0005EC33D /* VSetList.swift */; };
+		B453462825323D3B005EC33D /* VSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453462725323D3B005EC33D /* VSettings.swift */; };
 		B45642552551AA9B00B57AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45642542551AA9B00B57AAA /* LaunchScreen.storyboard */; };
-		B45C0D8825436038007279BC /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45C0D8725436038007279BC /* Common.swift */; };
-		B45C0D9225436DA4007279BC /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45C0D9125436DA4007279BC /* CardSet.swift */; };
-		B46FE9D8253630C7003D551D /* SettingsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46FE9D7253630C7003D551D /* SettingsButtonView.swift */; };
-		B46FE9DE2536379E003D551D /* SettingsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46FE9DD2536379E003D551D /* SettingsCardView.swift */; };
-		B4750090254F6D8700ACD4C7 /* SetPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475008F254F6D8700ACD4C7 /* SetPickerView.swift */; };
-		B4750098254F7AAC00ACD4C7 /* SettingsLicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4750097254F7AAC00ACD4C7 /* SettingsLicenseView.swift */; };
-		B475009C254F7B9600ACD4C7 /* LicenseZipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475009B254F7B9600ACD4C7 /* LicenseZipView.swift */; };
+		B45C0D8825436038007279BC /* MCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45C0D8725436038007279BC /* MCommon.swift */; };
+		B45C0D9225436DA4007279BC /* MCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45C0D9125436DA4007279BC /* MCardSet.swift */; };
+		B46FE9D8253630C7003D551D /* VSettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46FE9D7253630C7003D551D /* VSettingsButton.swift */; };
+		B46FE9DE2536379E003D551D /* VSettingsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46FE9DD2536379E003D551D /* VSettingsCard.swift */; };
+		B4750090254F6D8700ACD4C7 /* VSetPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475008F254F6D8700ACD4C7 /* VSetPicker.swift */; };
+		B4750098254F7AAC00ACD4C7 /* VSettingsLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4750097254F7AAC00ACD4C7 /* VSettingsLicense.swift */; };
+		B475009C254F7B9600ACD4C7 /* VLicenseZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475009B254F7B9600ACD4C7 /* VLicenseZip.swift */; };
 		B47500B225500E0200ACD4C7 /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47500AD254F833300ACD4C7 /* Zip.framework */; };
 		B47500B325500E0200ACD4C7 /* Zip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47500AD254F833300ACD4C7 /* Zip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B47A2F97253125FD00920E42 /* Settings.strings in Resources */ = {isa = PBXBuildFile; fileRef = B47A2F99253125FD00920E42 /* Settings.strings */; };
-		B47A5B88254CCA9B000C5F18 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A5B87254CCA9B000C5F18 /* SettingsViewModel.swift */; };
-		B47A5B91254CD3B0000C5F18 /* SettingsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A5B90254CD3B0000C5F18 /* SettingsSearchView.swift */; };
-		B47A5B96254CE9E6000C5F18 /* License.strings in Resources */ = {isa = PBXBuildFile; fileRef = B47A5B95254CE9E6000C5F18 /* License.strings */; };
-		B47A5B99254CEACF000C5F18 /* LicenseAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A5B98254CEACF000C5F18 /* LicenseAppView.swift */; };
-		B47A5B9D254CF08A000C5F18 /* SettingsAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A5B9C254CF08A000C5F18 /* SettingsAboutView.swift */; };
-		B47A5BA1254DBDC0000C5F18 /* SettingsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A5BA0254DBDC0000C5F18 /* SettingsFile.swift */; };
-		B47A5BA5254DCE01000C5F18 /* SetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A5BA4254DCE01000C5F18 /* SetListViewModel.swift */; };
-		B499EFC02544C9B900B845AC /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B499EFBF2544C9B900B845AC /* Card.swift */; };
-		B4A20FAF252FB955006B5C50 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A20FAE252FB955006B5C50 /* HomeView.swift */; };
-		B4A20FB8252FBB69006B5C50 /* Home.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4A20FBA252FBB69006B5C50 /* Home.strings */; };
-		B4AE983F25314A9700738C4C /* SetList.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4AE984125314A9700738C4C /* SetList.strings */; };
-		B4C5B4772530731900457A9E /* SetInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5B4762530731900457A9E /* SetInfoView.swift */; };
-		B4D92C53254B909E00C5F122 /* SetCardsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D92C52254B909E00C5F122 /* SetCardsInfoView.swift */; };
+		B47A2F97253125FD00920E42 /* SSettings.strings in Resources */ = {isa = PBXBuildFile; fileRef = B47A2F99253125FD00920E42 /* SSettings.strings */; };
+		B47A5B88254CCA9B000C5F18 /* VMSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A5B87254CCA9B000C5F18 /* VMSettings.swift */; };
+		B47A5B91254CD3B0000C5F18 /* VSettingsSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A5B90254CD3B0000C5F18 /* VSettingsSearch.swift */; };
+		B47A5B96254CE9E6000C5F18 /* SLicense.strings in Resources */ = {isa = PBXBuildFile; fileRef = B47A5B95254CE9E6000C5F18 /* SLicense.strings */; };
+		B47A5B99254CEACF000C5F18 /* VLicenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A5B98254CEACF000C5F18 /* VLicenseApp.swift */; };
+		B47A5B9D254CF08A000C5F18 /* VSettingsAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A5B9C254CF08A000C5F18 /* VSettingsAbout.swift */; };
+		B47A5BA1254DBDC0000C5F18 /* MSettingsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A5BA0254DBDC0000C5F18 /* MSettingsFile.swift */; };
+		B47A5BA5254DCE01000C5F18 /* VMSetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A5BA4254DCE01000C5F18 /* VMSetList.swift */; };
+		B499EFC02544C9B900B845AC /* MCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B499EFBF2544C9B900B845AC /* MCard.swift */; };
+		B4A20FAF252FB955006B5C50 /* VHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A20FAE252FB955006B5C50 /* VHome.swift */; };
+		B4A20FB8252FBB69006B5C50 /* SHome.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4A20FBA252FBB69006B5C50 /* SHome.strings */; };
+		B4AE983F25314A9700738C4C /* SSetList.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4AE984125314A9700738C4C /* SSetList.strings */; };
+		B4C5B4772530731900457A9E /* VSetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5B4762530731900457A9E /* VSetInfo.swift */; };
+		B4D92C53254B909E00C5F122 /* VSetCardsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D92C52254B909E00C5F122 /* VSetCardsInfo.swift */; };
 		B4E0CE48252FB8DF00005927 /* featherStackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E0CE47252FB8DF00005927 /* featherStackApp.swift */; };
 		B4E0CE4C252FB8E200005927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E0CE4B252FB8E200005927 /* Assets.xcassets */; };
 		B4E0CE4F252FB8E200005927 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E0CE4E252FB8E200005927 /* Preview Assets.xcassets */; };
 		B4E19BF82540DDAD00D685B5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E19BF72540DDAD00D685B5 /* libc++.tbd */; };
-		B4E63CCA2549882500B53EAD /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E63CC92549882500B53EAD /* CardViewModel.swift */; };
-		B4E63CCD25499EF800B53EAD /* ActiveSetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E63CCC25499EF800B53EAD /* ActiveSetViewModel.swift */; };
+		B4E63CCD25499EF800B53EAD /* VMActiveSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E63CCC25499EF800B53EAD /* VMActiveSet.swift */; };
 		B4F285632540A6C900499F5C /* libfscore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F285622540A6C800499F5C /* libfscore.a */; };
-		B4F2856B2540B07400499F5C /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F2856A2540B07400499F5C /* Context.swift */; };
+		B4F2856B2540B07400499F5C /* MContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F2856A2540B07400499F5C /* MContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,49 +63,49 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B411831D253369330002EA4A /* ActiveSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSetView.swift; sourceTree = "<group>"; };
-		B411833125338FCE0002EA4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ActiveSet.strings; sourceTree = "<group>"; };
-		B411833425338FD10002EA4A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/ActiveSet.strings; sourceTree = "<group>"; };
-		B413E85925364B9600B741A2 /* SettingsVersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVersionView.swift; sourceTree = "<group>"; };
-		B427A7FD253204950028D0C8 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
-		B435B8D325339CFE00C2B0A7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		B453462225323CC0005EC33D /* SetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListView.swift; sourceTree = "<group>"; };
-		B453462725323D3B005EC33D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B411831D253369330002EA4A /* VActiveSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VActiveSet.swift; sourceTree = "<group>"; };
+		B411833125338FCE0002EA4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SActiveSet.strings; sourceTree = "<group>"; };
+		B411833425338FD10002EA4A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/SActiveSet.strings; sourceTree = "<group>"; };
+		B413E85925364B9600B741A2 /* VSettingsVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSettingsVersion.swift; sourceTree = "<group>"; };
+		B41BD36E2555DA1500F34F56 /* VMCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMCard.swift; sourceTree = "<group>"; };
+		B427A7FD253204950028D0C8 /* VSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSearchBar.swift; sourceTree = "<group>"; };
+		B435B8D325339CFE00C2B0A7 /* VCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCard.swift; sourceTree = "<group>"; };
+		B453462225323CC0005EC33D /* VSetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSetList.swift; sourceTree = "<group>"; };
+		B453462725323D3B005EC33D /* VSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSettings.swift; sourceTree = "<group>"; };
 		B45642542551AA9B00B57AAA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B45C0D8725436038007279BC /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		B45C0D9125436DA4007279BC /* CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSet.swift; sourceTree = "<group>"; };
-		B46FE9D7253630C7003D551D /* SettingsButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButtonView.swift; sourceTree = "<group>"; };
-		B46FE9DD2536379E003D551D /* SettingsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCardView.swift; sourceTree = "<group>"; };
+		B45C0D8725436038007279BC /* MCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCommon.swift; sourceTree = "<group>"; };
+		B45C0D9125436DA4007279BC /* MCardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCardSet.swift; sourceTree = "<group>"; };
+		B46FE9D7253630C7003D551D /* VSettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSettingsButton.swift; sourceTree = "<group>"; };
+		B46FE9DD2536379E003D551D /* VSettingsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSettingsCard.swift; sourceTree = "<group>"; };
 		B4750088254F5EB300ACD4C7 /* featherStack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = featherStack.entitlements; sourceTree = "<group>"; };
-		B475008F254F6D8700ACD4C7 /* SetPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPickerView.swift; sourceTree = "<group>"; };
-		B4750097254F7AAC00ACD4C7 /* SettingsLicenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLicenseView.swift; sourceTree = "<group>"; };
-		B475009B254F7B9600ACD4C7 /* LicenseZipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseZipView.swift; sourceTree = "<group>"; };
+		B475008F254F6D8700ACD4C7 /* VSetPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSetPicker.swift; sourceTree = "<group>"; };
+		B4750097254F7AAC00ACD4C7 /* VSettingsLicense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSettingsLicense.swift; sourceTree = "<group>"; };
+		B475009B254F7B9600ACD4C7 /* VLicenseZip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLicenseZip.swift; sourceTree = "<group>"; };
 		B47500AD254F833300ACD4C7 /* Zip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Zip.framework; path = frameworks/Zip.framework; sourceTree = "<group>"; };
-		B47A2F98253125FD00920E42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Settings.strings; sourceTree = "<group>"; };
-		B47A2F9A2531260200920E42 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Settings.strings; sourceTree = "<group>"; };
-		B47A5B87254CCA9B000C5F18 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		B47A5B90254CD3B0000C5F18 /* SettingsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSearchView.swift; sourceTree = "<group>"; };
-		B47A5B95254CE9E6000C5F18 /* License.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = License.strings; sourceTree = "<group>"; };
-		B47A5B98254CEACF000C5F18 /* LicenseAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseAppView.swift; sourceTree = "<group>"; };
-		B47A5B9C254CF08A000C5F18 /* SettingsAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAboutView.swift; sourceTree = "<group>"; };
-		B47A5BA0254DBDC0000C5F18 /* SettingsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFile.swift; sourceTree = "<group>"; };
-		B47A5BA4254DCE01000C5F18 /* SetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListViewModel.swift; sourceTree = "<group>"; };
-		B499EFBF2544C9B900B845AC /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		B4A20FAE252FB955006B5C50 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		B4A20FB9252FBB69006B5C50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Home.strings; sourceTree = "<group>"; };
-		B4A20FBC252FBB6C006B5C50 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Home.strings; sourceTree = "<group>"; };
-		B4AE984025314A9700738C4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SetList.strings; sourceTree = "<group>"; };
-		B4AE984325314A9C00738C4C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/SetList.strings; sourceTree = "<group>"; };
-		B4C5B4762530731900457A9E /* SetInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetInfoView.swift; sourceTree = "<group>"; };
-		B4D92C52254B909E00C5F122 /* SetCardsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardsInfoView.swift; sourceTree = "<group>"; };
+		B47A2F98253125FD00920E42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SSettings.strings; sourceTree = "<group>"; };
+		B47A2F9A2531260200920E42 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/SSettings.strings; sourceTree = "<group>"; };
+		B47A5B87254CCA9B000C5F18 /* VMSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMSettings.swift; sourceTree = "<group>"; };
+		B47A5B90254CD3B0000C5F18 /* VSettingsSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSettingsSearch.swift; sourceTree = "<group>"; };
+		B47A5B95254CE9E6000C5F18 /* SLicense.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = SLicense.strings; sourceTree = "<group>"; };
+		B47A5B98254CEACF000C5F18 /* VLicenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLicenseApp.swift; sourceTree = "<group>"; };
+		B47A5B9C254CF08A000C5F18 /* VSettingsAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSettingsAbout.swift; sourceTree = "<group>"; };
+		B47A5BA0254DBDC0000C5F18 /* MSettingsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSettingsFile.swift; sourceTree = "<group>"; };
+		B47A5BA4254DCE01000C5F18 /* VMSetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMSetList.swift; sourceTree = "<group>"; };
+		B499EFBF2544C9B900B845AC /* MCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCard.swift; sourceTree = "<group>"; };
+		B4A20FAE252FB955006B5C50 /* VHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHome.swift; sourceTree = "<group>"; };
+		B4A20FB9252FBB69006B5C50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SHome.strings; sourceTree = "<group>"; };
+		B4A20FBC252FBB6C006B5C50 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/SHome.strings; sourceTree = "<group>"; };
+		B4AE984025314A9700738C4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SSetList.strings; sourceTree = "<group>"; };
+		B4AE984325314A9C00738C4C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/SSetList.strings; sourceTree = "<group>"; };
+		B4C5B4762530731900457A9E /* VSetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSetInfo.swift; sourceTree = "<group>"; };
+		B4D92C52254B909E00C5F122 /* VSetCardsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSetCardsInfo.swift; sourceTree = "<group>"; };
 		B4E0CE44252FB8DF00005927 /* featherStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = featherStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E0CE47252FB8DF00005927 /* featherStackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = featherStackApp.swift; sourceTree = "<group>"; };
 		B4E0CE4B252FB8E200005927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4E0CE4E252FB8E200005927 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B4E0CE50252FB8E200005927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4E19BF72540DDAD00D685B5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		B4E63CC92549882500B53EAD /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
-		B4E63CCC25499EF800B53EAD /* ActiveSetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSetViewModel.swift; sourceTree = "<group>"; };
+		B4E63CCC25499EF800B53EAD /* VMActiveSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMActiveSet.swift; sourceTree = "<group>"; };
 		B4EC412E2543227100B0E081 /* FSC_Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSC_Common.h; sourceTree = "<group>"; };
 		B4F2855C2540A6C800499F5C /* FSC_CardSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_CardSet.h; sourceTree = "<group>"; };
 		B4F2855D2540A6C800499F5C /* FSC_Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_Card.h; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		B4F285602540A6C800499F5C /* FSC_Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_Error.h; sourceTree = "<group>"; };
 		B4F285622540A6C800499F5C /* libfscore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfscore.a; sourceTree = "<group>"; };
 		B4F285642540A6E400499F5C /* featherStack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "featherStack-Bridging-Header.h"; sourceTree = "<group>"; };
-		B4F2856A2540B07400499F5C /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		B4F2856A2540B07400499F5C /* MContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,9 +143,9 @@
 		B47492AF2543B45000CEFF43 /* ActiveSet */ = {
 			isa = PBXGroup;
 			children = (
-				B4D92C52254B909E00C5F122 /* SetCardsInfoView.swift */,
-				B435B8D325339CFE00C2B0A7 /* CardView.swift */,
-				B411831D253369330002EA4A /* ActiveSetView.swift */,
+				B4D92C52254B909E00C5F122 /* VSetCardsInfo.swift */,
+				B435B8D325339CFE00C2B0A7 /* VCard.swift */,
+				B411831D253369330002EA4A /* VActiveSet.swift */,
 			);
 			path = ActiveSet;
 			sourceTree = "<group>";
@@ -153,8 +153,8 @@
 		B4750096254F7A9800ACD4C7 /* License */ = {
 			isa = PBXGroup;
 			children = (
-				B47A5B98254CEACF000C5F18 /* LicenseAppView.swift */,
-				B475009B254F7B9600ACD4C7 /* LicenseZipView.swift */,
+				B47A5B98254CEACF000C5F18 /* VLicenseApp.swift */,
+				B475009B254F7B9600ACD4C7 /* VLicenseZip.swift */,
 			);
 			path = License;
 			sourceTree = "<group>";
@@ -163,13 +163,13 @@
 			isa = PBXGroup;
 			children = (
 				B4750096254F7A9800ACD4C7 /* License */,
-				B413E85925364B9600B741A2 /* SettingsVersionView.swift */,
-				B46FE9D7253630C7003D551D /* SettingsButtonView.swift */,
-				B4750097254F7AAC00ACD4C7 /* SettingsLicenseView.swift */,
-				B47A5B9C254CF08A000C5F18 /* SettingsAboutView.swift */,
-				B47A5B90254CD3B0000C5F18 /* SettingsSearchView.swift */,
-				B46FE9DD2536379E003D551D /* SettingsCardView.swift */,
-				B453462725323D3B005EC33D /* SettingsView.swift */,
+				B413E85925364B9600B741A2 /* VSettingsVersion.swift */,
+				B46FE9D7253630C7003D551D /* VSettingsButton.swift */,
+				B4750097254F7AAC00ACD4C7 /* VSettingsLicense.swift */,
+				B47A5B9C254CF08A000C5F18 /* VSettingsAbout.swift */,
+				B47A5B90254CD3B0000C5F18 /* VSettingsSearch.swift */,
+				B46FE9DD2536379E003D551D /* VSettingsCard.swift */,
+				B453462725323D3B005EC33D /* VSettings.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 		B47A5B86254CCA8C000C5F18 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				B47A5B87254CCA9B000C5F18 /* SettingsViewModel.swift */,
+				B47A5B87254CCA9B000C5F18 /* VMSettings.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -185,7 +185,7 @@
 		B47A5B8B254CCAE6000C5F18 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				B47A5BA0254DBDC0000C5F18 /* SettingsFile.swift */,
+				B47A5BA0254DBDC0000C5F18 /* MSettingsFile.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 		B47A5BA3254DCDDF000C5F18 /* SetList */ = {
 			isa = PBXGroup;
 			children = (
-				B47A5BA4254DCE01000C5F18 /* SetListViewModel.swift */,
+				B47A5BA4254DCE01000C5F18 /* VMSetList.swift */,
 			);
 			path = SetList;
 			sourceTree = "<group>";
@@ -201,9 +201,9 @@
 		B499EFBC2544B7AE00B845AC /* CardSet */ = {
 			isa = PBXGroup;
 			children = (
-				B4F2856A2540B07400499F5C /* Context.swift */,
-				B45C0D9125436DA4007279BC /* CardSet.swift */,
-				B499EFBF2544C9B900B845AC /* Card.swift */,
+				B4F2856A2540B07400499F5C /* MContext.swift */,
+				B45C0D9125436DA4007279BC /* MCardSet.swift */,
+				B499EFBF2544C9B900B845AC /* MCard.swift */,
 			);
 			path = CardSet;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 			children = (
 				B47A2F89253122A700920E42 /* Settings */,
 				B454164F2531F21300618911 /* CardSet */,
-				B4A20FAE252FB955006B5C50 /* HomeView.swift */,
+				B4A20FAE252FB955006B5C50 /* VHome.swift */,
 				B4E0CE47252FB8DF00005927 /* featherStackApp.swift */,
 			);
 			path = View;
@@ -222,9 +222,9 @@
 		B4A20FAD252FB94A006B5C50 /* SetList */ = {
 			isa = PBXGroup;
 			children = (
-				B427A7FD253204950028D0C8 /* SearchBarView.swift */,
-				B4C5B4762530731900457A9E /* SetInfoView.swift */,
-				B453462225323CC0005EC33D /* SetListView.swift */,
+				B427A7FD253204950028D0C8 /* VSearchBar.swift */,
+				B4C5B4762530731900457A9E /* VSetInfo.swift */,
+				B453462225323CC0005EC33D /* VSetList.swift */,
 			);
 			path = SetList;
 			sourceTree = "<group>";
@@ -232,23 +232,23 @@
 		B4A20FB3252FBB17006B5C50 /* Locale */ = {
 			isa = PBXGroup;
 			children = (
-				B47A2F99253125FD00920E42 /* Settings.strings */,
-				B411833225338FCE0002EA4A /* ActiveSet.strings */,
-				B4AE984125314A9700738C4C /* SetList.strings */,
-				B4A20FBA252FBB69006B5C50 /* Home.strings */,
-				B47A5B95254CE9E6000C5F18 /* License.strings */,
+				B47A2F99253125FD00920E42 /* SSettings.strings */,
+				B411833225338FCE0002EA4A /* SActiveSet.strings */,
+				B4AE984125314A9700738C4C /* SSetList.strings */,
+				B4A20FBA252FBB69006B5C50 /* SHome.strings */,
+				B47A5B95254CE9E6000C5F18 /* SLicense.strings */,
 			);
 			path = Locale;
 			sourceTree = "<group>";
 		};
-		B4C5B4792530733D00457A9E /* DataSource */ = {
+		B4C5B4792530733D00457A9E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B45C0D8725436038007279BC /* Common.swift */,
+				B45C0D8725436038007279BC /* MCommon.swift */,
 				B47A5B8B254CCAE6000C5F18 /* Settings */,
 				B499EFBC2544B7AE00B845AC /* CardSet */,
 			);
-			path = DataSource;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B4E0CE3B252FB8DF00005927 = {
@@ -274,7 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				B4A20FB3252FBB17006B5C50 /* Locale */,
-				B4C5B4792530733D00457A9E /* DataSource */,
+				B4C5B4792530733D00457A9E /* Model */,
 				B4E63CC62549880500B53EAD /* ViewModel */,
 				B4A20FAC252FB946006B5C50 /* View */,
 				B4F285642540A6E400499F5C /* featherStack-Bridging-Header.h */,
@@ -325,8 +325,8 @@
 		B4E63CC82549881700B53EAD /* ActiveSet */ = {
 			isa = PBXGroup;
 			children = (
-				B4E63CC92549882500B53EAD /* CardViewModel.swift */,
-				B4E63CCC25499EF800B53EAD /* ActiveSetViewModel.swift */,
+				B41BD36E2555DA1500F34F56 /* VMCard.swift */,
+				B4E63CCC25499EF800B53EAD /* VMActiveSet.swift */,
 			);
 			path = ActiveSet;
 			sourceTree = "<group>";
@@ -334,7 +334,7 @@
 		B4EA98932537822D00410471 /* Add */ = {
 			isa = PBXGroup;
 			children = (
-				B475008F254F6D8700ACD4C7 /* SetPickerView.swift */,
+				B475008F254F6D8700ACD4C7 /* VSetPicker.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -436,12 +436,12 @@
 			files = (
 				B4E0CE4F252FB8E200005927 /* Preview Assets.xcassets in Resources */,
 				B45642552551AA9B00B57AAA /* LaunchScreen.storyboard in Resources */,
-				B47A2F97253125FD00920E42 /* Settings.strings in Resources */,
+				B47A2F97253125FD00920E42 /* SSettings.strings in Resources */,
 				B4E0CE4C252FB8E200005927 /* Assets.xcassets in Resources */,
-				B4AE983F25314A9700738C4C /* SetList.strings in Resources */,
-				B47A5B96254CE9E6000C5F18 /* License.strings in Resources */,
-				B4A20FB8252FBB69006B5C50 /* Home.strings in Resources */,
-				B411833025338FCE0002EA4A /* ActiveSet.strings in Resources */,
+				B4AE983F25314A9700738C4C /* SSetList.strings in Resources */,
+				B47A5B96254CE9E6000C5F18 /* SLicense.strings in Resources */,
+				B4A20FB8252FBB69006B5C50 /* SHome.strings in Resources */,
+				B411833025338FCE0002EA4A /* SActiveSet.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,73 +452,73 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B435B8D425339CFE00C2B0A7 /* CardView.swift in Sources */,
-				B427A7FE253204950028D0C8 /* SearchBarView.swift in Sources */,
-				B453462325323CC0005EC33D /* SetListView.swift in Sources */,
-				B47A5BA5254DCE01000C5F18 /* SetListViewModel.swift in Sources */,
-				B4A20FAF252FB955006B5C50 /* HomeView.swift in Sources */,
-				B413E85A25364B9600B741A2 /* SettingsVersionView.swift in Sources */,
-				B4E63CCD25499EF800B53EAD /* ActiveSetViewModel.swift in Sources */,
-				B47A5BA1254DBDC0000C5F18 /* SettingsFile.swift in Sources */,
+				B435B8D425339CFE00C2B0A7 /* VCard.swift in Sources */,
+				B427A7FE253204950028D0C8 /* VSearchBar.swift in Sources */,
+				B453462325323CC0005EC33D /* VSetList.swift in Sources */,
+				B47A5BA5254DCE01000C5F18 /* VMSetList.swift in Sources */,
+				B4A20FAF252FB955006B5C50 /* VHome.swift in Sources */,
+				B413E85A25364B9600B741A2 /* VSettingsVersion.swift in Sources */,
+				B4E63CCD25499EF800B53EAD /* VMActiveSet.swift in Sources */,
+				B47A5BA1254DBDC0000C5F18 /* MSettingsFile.swift in Sources */,
 				B4E0CE48252FB8DF00005927 /* featherStackApp.swift in Sources */,
-				B46FE9DE2536379E003D551D /* SettingsCardView.swift in Sources */,
-				B4E63CCA2549882500B53EAD /* CardViewModel.swift in Sources */,
-				B411831E253369330002EA4A /* ActiveSetView.swift in Sources */,
-				B4F2856B2540B07400499F5C /* Context.swift in Sources */,
-				B4D92C53254B909E00C5F122 /* SetCardsInfoView.swift in Sources */,
-				B45C0D8825436038007279BC /* Common.swift in Sources */,
-				B46FE9D8253630C7003D551D /* SettingsButtonView.swift in Sources */,
-				B47A5B88254CCA9B000C5F18 /* SettingsViewModel.swift in Sources */,
-				B4C5B4772530731900457A9E /* SetInfoView.swift in Sources */,
-				B45C0D9225436DA4007279BC /* CardSet.swift in Sources */,
-				B47A5B91254CD3B0000C5F18 /* SettingsSearchView.swift in Sources */,
-				B47A5B99254CEACF000C5F18 /* LicenseAppView.swift in Sources */,
-				B47A5B9D254CF08A000C5F18 /* SettingsAboutView.swift in Sources */,
-				B453462825323D3B005EC33D /* SettingsView.swift in Sources */,
-				B4750090254F6D8700ACD4C7 /* SetPickerView.swift in Sources */,
-				B499EFC02544C9B900B845AC /* Card.swift in Sources */,
-				B475009C254F7B9600ACD4C7 /* LicenseZipView.swift in Sources */,
-				B4750098254F7AAC00ACD4C7 /* SettingsLicenseView.swift in Sources */,
+				B46FE9DE2536379E003D551D /* VSettingsCard.swift in Sources */,
+				B411831E253369330002EA4A /* VActiveSet.swift in Sources */,
+				B4F2856B2540B07400499F5C /* MContext.swift in Sources */,
+				B4D92C53254B909E00C5F122 /* VSetCardsInfo.swift in Sources */,
+				B45C0D8825436038007279BC /* MCommon.swift in Sources */,
+				B46FE9D8253630C7003D551D /* VSettingsButton.swift in Sources */,
+				B47A5B88254CCA9B000C5F18 /* VMSettings.swift in Sources */,
+				B4C5B4772530731900457A9E /* VSetInfo.swift in Sources */,
+				B45C0D9225436DA4007279BC /* MCardSet.swift in Sources */,
+				B47A5B91254CD3B0000C5F18 /* VSettingsSearch.swift in Sources */,
+				B47A5B99254CEACF000C5F18 /* VLicenseApp.swift in Sources */,
+				B47A5B9D254CF08A000C5F18 /* VSettingsAbout.swift in Sources */,
+				B453462825323D3B005EC33D /* VSettings.swift in Sources */,
+				B4750090254F6D8700ACD4C7 /* VSetPicker.swift in Sources */,
+				B499EFC02544C9B900B845AC /* MCard.swift in Sources */,
+				B475009C254F7B9600ACD4C7 /* VLicenseZip.swift in Sources */,
+				B4750098254F7AAC00ACD4C7 /* VSettingsLicense.swift in Sources */,
+				B41BD36F2555DA1500F34F56 /* VMCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B411833225338FCE0002EA4A /* ActiveSet.strings */ = {
+		B411833225338FCE0002EA4A /* SActiveSet.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B411833125338FCE0002EA4A /* en */,
 				B411833425338FD10002EA4A /* de */,
 			);
-			name = ActiveSet.strings;
+			name = SActiveSet.strings;
 			sourceTree = "<group>";
 		};
-		B47A2F99253125FD00920E42 /* Settings.strings */ = {
+		B47A2F99253125FD00920E42 /* SSettings.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B47A2F98253125FD00920E42 /* en */,
 				B47A2F9A2531260200920E42 /* de */,
 			);
-			name = Settings.strings;
+			name = SSettings.strings;
 			sourceTree = "<group>";
 		};
-		B4A20FBA252FBB69006B5C50 /* Home.strings */ = {
+		B4A20FBA252FBB69006B5C50 /* SHome.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B4A20FB9252FBB69006B5C50 /* en */,
 				B4A20FBC252FBB6C006B5C50 /* de */,
 			);
-			name = Home.strings;
+			name = SHome.strings;
 			sourceTree = "<group>";
 		};
-		B4AE984125314A9700738C4C /* SetList.strings */ = {
+		B4AE984125314A9700738C4C /* SSetList.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B4AE984025314A9700738C4C /* en */,
 				B4AE984325314A9C00738C4C /* de */,
 			);
-			name = SetList.strings;
+			name = SSetList.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -650,7 +650,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = featherStack/featherStack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 159;
+				CURRENT_PROJECT_VERSION = 188;
 				DEVELOPMENT_ASSET_PATHS = "\"featherStack/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -679,7 +679,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = featherStack/featherStack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 159;
+				CURRENT_PROJECT_VERSION = 188;
 				DEVELOPMENT_ASSET_PATHS = "\"featherStack/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;

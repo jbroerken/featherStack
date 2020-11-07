@@ -89,7 +89,7 @@ void FSC_CardSet_t::CardSetup() noexcept
     {
         for (size_t i = 0; i < us_CardCountTotal && i < c_Loader.GetCacheSize(); ++i)
         {
-            c_Loader.LoadCard(c_List.GetPos(i));
+            c_Loader.LoadCard(c_List.GetPos(i), NULL, NULL);
         }
     }
     catch (FSC_Exception& e)
@@ -120,7 +120,7 @@ bool FSC_CSUsable(const FSC_CardSet* p_Set)
 // Grab
 //*************************************************************************************
 
-void FSC_CSGrabCard(FSC_CardSetOpaque* p_Set, FSC_CardOpaque** p_Destination)
+void FSC_CSGrabCard(FSC_CardSetOpaque* p_Set, FSC_Callback p_Callback, FSC_Destination p_Destination)
 {
     if (!FSC_CSUsable(p_Set))
     {
@@ -130,7 +130,7 @@ void FSC_CSGrabCard(FSC_CardSetOpaque* p_Set, FSC_CardOpaque** p_Destination)
     try
     {
         // Handle correct path creation ourselfes, loader should not be concerned about that
-        p_Set->c_Loader.LoadCard(p_Set->c_List.GetNext(), p_Destination);
+        p_Set->c_Loader.LoadCard(p_Set->c_List.GetNext(), p_Callback, p_Destination);
     }
     catch (FSC_Exception& e)
     {

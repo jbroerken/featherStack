@@ -150,13 +150,14 @@ void FSC_CSLoader::ThreadLoad(FSC_CSLoader* p_Instance) noexcept
 {
     FSC_Card* p_Card;
     
-    FSC_CardOpaque** p_Destination;
+    FSC_Callback p_Callback;
+    FSC_Destination p_Destination;
     std::string s_FilePath;
     
     while (!(p_Instance->b_Stop))
     {
         // Do we have a job to do?
-        if (!(p_Instance->c_JobList.Claim(p_Destination, s_FilePath)))
+        if (!(p_Instance->c_JobList.Claim(p_Callback, p_Destination, s_FilePath)))
         {
             std::unique_lock<std::mutex> c_UniqueLock(p_Instance->c_ConditionMutex);
             p_Instance->c_Condition.wait(c_UniqueLock);
@@ -190,7 +191,7 @@ void FSC_CSLoader::ThreadLoad(FSC_CSLoader* p_Instance) noexcept
             printf("[ fscore ]: %s\n", e.what()); // @TODO: Better Logging
             FSC_ESetError(FSC_ERROR_GENERAL_MALLOC);
             
-            p_Instance->c_JobList.Add(p_Destination, s_FilePath, true);
+            p_Instance->c_JobList.Add(p_Callback, p_Destination, s_FilePath, true);
             continue;
         }
         catch (std::exception& e)
@@ -198,7 +199,7 @@ void FSC_CSLoader::ThreadLoad(FSC_CSLoader* p_Instance) noexcept
             printf("[ fscore ]: %s\n", e.what()); // @TODO: Better Logging
             FSC_ESetError(FSC_ERROR_UNK);
             
-            p_Instance->c_JobList.Add(p_Destination, s_FilePath, true);
+            p_Instance->c_JobList.Add(p_Callback, p_Destination, s_FilePath, true);
             continue;
         }
         
@@ -217,9 +218,9 @@ void FSC_CSLoader::ThreadLoad(FSC_CSLoader* p_Instance) noexcept
             
             // All done, either assign to destination or add to available
             // NOTE: Space is available and card valid, no throw here
-            if (p_Destination != NULL)
+            if (p_Callback != NULL)
             {
-                *p_Destination = p_Card;
+                p_Callback(p_Card, p_Destination);
             }
             else
             {
@@ -232,9 +233,9 @@ void FSC_CSLoader::ThreadLoad(FSC_CSLoader* p_Instance) noexcept
             printf("[ fscore ]: %s\n", e.what()); // @TODO: Better Logging
             
             // Are we supposed to assign to destination? Use NULL if so, we failed
-            if (p_Destination != NULL)
+            if (p_Callback != NULL)
             {
-                *p_Destination = NULL;
+                p_Callback(p_Card, NULL);
             }
             
             // Add failed to cache, reuse
@@ -247,21 +248,21 @@ void FSC_CSLoader::ThreadLoad(FSC_CSLoader* p_Instance) noexcept
 // Job
 //*************************************************************************************
 
-void FSC_CSLoader::JobList::Add(FSC_CardOpaque** const& p_Destination, std::string const& s_FilePath, bool b_Front) noexcept
+void FSC_CSLoader::JobList::Add(FSC_Callback const& p_Callback, FSC_Destination& p_Destination, std::string const& s_FilePath, bool b_Front) noexcept
 {
     std::lock_guard<std::mutex> c_Guard(c_Mutex);
     
     if (b_Front)
     {
-        l_Job.emplace_front(std::make_pair(p_Destination, s_FilePath));
+        l_Job.emplace_front(std::make_pair(std::make_pair(p_Callback, p_Destination), s_FilePath));
     }
     else
     {
-        l_Job.emplace_back(std::make_pair(p_Destination, s_FilePath));
+        l_Job.emplace_back(std::make_pair(std::make_pair(p_Callback, p_Destination), s_FilePath));
     }
 }
 
-bool FSC_CSLoader::JobList::Claim(FSC_CardOpaque**& p_Destination, std::string& s_FilePath) noexcept
+bool FSC_CSLoader::JobList::Claim(FSC_Callback& p_Callback, FSC_Destination& p_Destination, std::string& s_FilePath) noexcept
 {
     std::lock_guard<std::mutex> c_Guard(c_Mutex);
     
@@ -271,7 +272,8 @@ bool FSC_CSLoader::JobList::Claim(FSC_CardOpaque**& p_Destination, std::string& 
         return false;
     }
     
-    p_Destination = l_Job.begin()->first;
+    p_Callback = l_Job.begin()->first.first;
+    p_Destination = l_Job.begin()->first.second;
     s_FilePath = l_Job.begin()->second;
     
     l_Job.pop_front();
@@ -302,7 +304,7 @@ void FSC_CSLoader::AddToCache(FSC_Card*& p_Card) noexcept
 // Load Card
 //*************************************************************************************
 
-void FSC_CSLoader::LoadCard(std::string const& s_FilePath, FSC_CardOpaque** p_Destination) noexcept
+void FSC_CSLoader::LoadCard(std::string const& s_FilePath, FSC_Callback p_Callback, FSC_Destination p_Destination) noexcept
 {
     // Valid file path?
     if (s_FilePath.length() == 0 || s_FilePath.length() > FSC_CD_STR_MAX_LENGTH)
@@ -311,9 +313,9 @@ void FSC_CSLoader::LoadCard(std::string const& s_FilePath, FSC_CardOpaque** p_De
         FSC_ESetError(FSC_ERROR_GENERAL_INVALID_PARAM);
         
         // Assignment required? Set NULL to indicate failure.
-        if (p_Destination != NULL)
+        if (p_Callback != NULL && p_Destination != NULL)
         {
-            *p_Destination = NULL;
+            p_Callback(NULL, p_Destination);
         }
         
         return;
@@ -326,9 +328,9 @@ void FSC_CSLoader::LoadCard(std::string const& s_FilePath, FSC_CardOpaque** p_De
         {
             FSC_Card* p_Card = c_Cache.GetPath(s_FilePath);
             
-            if (p_Destination != NULL)
+            if (p_Callback != NULL && p_Destination != NULL)
             {
-                *p_Destination = p_Card;
+                p_Callback(p_Card, p_Destination);
             }
             else
             {
@@ -342,7 +344,7 @@ void FSC_CSLoader::LoadCard(std::string const& s_FilePath, FSC_CardOpaque** p_De
     }
     
     // Nothing in cache, load new
-    c_JobList.Add(p_Destination, s_FilePath);
+    c_JobList.Add(p_Callback, p_Destination, s_FilePath);
     c_Condition.notify_one();
 }
 
