@@ -88,21 +88,23 @@ struct FSSetListView: View {
                     .padding()
                 
                 // List card sets as buttons
-                ForEach(0 ..< c_Model.GetSetCount(), id:\.self) { i_Entry in
-                    if let c_Set = GetEntry(i_Entry) {
+                ForEach(0 ..< c_Model.i_EntryCount, id:\.self) { i_Entry in
+                    if let c_Entry = self.c_Model.GetEntry(i_Entry: i_Entry,
+                                                           s_Filter: s_SearchText,
+                                                           b_Exact: c_Settings.b_SExactString) {
                         Button(action: {
                             // Simple press leads directly to practice
                             self.SelectEntry(i_Entry: i_Entry,
-                                             s_Title: c_Set.s_Title,
+                                             s_Title: c_Entry.s_Title,
                                              e_Mode: FSActiveSetViewModel.Mode.Practice)
                         }) {
-                            FSSetInfoView(c_Set)
+                            FSSetInfoView(c_Entry)
                                 .frame(minHeight: 70.0, maxHeight: 70.0) // Force same height even for multiline text
                         }
                         .contextMenu(ContextMenu(menuItems: { /* Allow options if desired */
                             Button(action: {
                                 self.SelectEntry(i_Entry: i_Entry,
-                                                 s_Title: c_Set.s_Title,
+                                                 s_Title: c_Entry.s_Title,
                                                  e_Mode: FSActiveSetViewModel.Mode.Practice)
                             }) {
                                 Image(systemName: "play.fill")
@@ -111,7 +113,7 @@ struct FSSetListView: View {
                             
                             Button(action: {
                                 self.SelectEntry(i_Entry: i_Entry,
-                                                 s_Title: c_Set.s_Title,
+                                                 s_Title: c_Entry.s_Title,
                                                  e_Mode: FSActiveSetViewModel.Mode.Read)
                             }) {
                                 Image(systemName: "book.fill")
@@ -140,7 +142,7 @@ struct FSSetListView: View {
                 .padding([.leading, .trailing])
             
             // Show content depending on set count
-            if (c_Model.GetSetCount() > 0) {
+            if (c_Model.i_EntryCount > 0) {
                 // We have one or more sets, list them
                 v_SetList
                 
@@ -184,43 +186,6 @@ struct FSSetListView: View {
     //************************************************************
     // Card Set
     //************************************************************
-    
-    /**
-     *  Get a card set entry.
-     *
-     *  - Parameter i_Entry: The set entry for the card set.
-     *
-     *  - Returns: The requested card set
-     */
-    
-    func GetEntry(_ i_Entry: Int) -> FSContext.FSEntry? {
-        guard let c_Entry = c_Model.GetEntry(i_Entry) else {
-            return nil
-        }
-        
-        // Apply filter
-        if (s_SearchText.isEmpty) {
-            return c_Entry
-        }
-        
-        if (!c_Settings.b_SExactString) {
-            // Ignore capitalization requires lowercasing
-            let s_Title = c_Entry.s_Title.lowercased()
-            let s_Substring = s_SearchText.lowercased()
-            
-            if (!s_Title.contains(s_Substring)) {
-                return nil
-            }
-        } else {
-            // Standard, as-is
-            if (!c_Entry.s_Title.contains(s_SearchText)) {
-                return nil
-            }
-        }
-        
-        // Filter passed
-        return c_Entry
-    }
     
     /**
      *  Select a card set entry and trigger a navigation link.

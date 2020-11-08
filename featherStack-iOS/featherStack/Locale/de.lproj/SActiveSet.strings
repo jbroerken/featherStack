@@ -44,3 +44,9 @@
 "@ALERT_TITLE" = "Warnung";
 "@ALERT_MESSAGE" = "Die Karte konnte nicht geladen werden.";
 "@ALERT_DISMISS" = "Ok";
+
+// Usage Tutorial
+"@TUTORIAL_TITLE" = "Karten beantworten";
+"@TUTORIAL_MESSAGE_R" = "Tippen Sie die Karte an um die Antwort anzuzeigen. Wischen sie dann die Karte nach rechts wenn sie die Antwort kannten oder nach links falls nicht.";
+"@TUTORIAL_MESSAGE_L" = "Tippen Sie die Karte an um die Antwort anzuzeigen. Wischen sie dann die Karte nach links wenn sie die Antwort kannten oder nach rechts falls nicht.";
+"@TUTORIAL_DISMISS" = "Verstanden";

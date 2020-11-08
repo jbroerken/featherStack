@@ -30,9 +30,9 @@ struct FSSettingsAboutView: View {
     // Variables
     //************************************************************
     
-    private let s_SourceURL = URL(string: NSLocalizedString("@ABOUT_SOURCE_WEB",
-                                                            tableName: "SSettings",
-                                                            comment: "Source code url"))
+    @State private var s_SourceURL = URL(string: NSLocalizedString("@ABOUT_SOURCE_WEB",
+                                                                   tableName: "SSettings",
+                                                                   comment: "Source code url"))
     
     //************************************************************
     // Source Code Body

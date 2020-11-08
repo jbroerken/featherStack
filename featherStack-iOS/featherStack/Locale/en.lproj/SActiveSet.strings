@@ -44,3 +44,9 @@
 "@ALERT_TITLE" = "Warning";
 "@ALERT_MESSAGE" = "The card failed to load.";
 "@ALERT_DISMISS" = "Ok";
+
+// Usage Tutorial
+"@TUTORIAL_TITLE" = "Answerings cards";
+"@TUTORIAL_MESSAGE_R" = "Tap a card to show the answer. Then swipe the card to the right if you know the answer or to the left if not.";
+"@TUTORIAL_MESSAGE_L" = "Tap a card to show the answer. Then swipe the card to the left if you know the answer or to the right if not.";
+"@TUTORIAL_DISMISS" = "Got it";

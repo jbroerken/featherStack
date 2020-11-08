@@ -78,12 +78,12 @@ struct FSSetInfoView: View {
     /**
      *  Initialize the card set info view.
      *
-     *  - Parameter c_Set: The context set entry to show information about.
+     *  - Parameter c_Entry: The context set entry to show information about.
      */
     
-    init(_ c_Set: FSContext.FSEntry) {
-        s_Title = c_Set.s_Title
-        s_Subtitle = c_Set.s_Subtitle
-        s_IconPath = c_Set.s_IconPath
+    init(_ c_Entry: FSContext.FSEntry) {
+        s_Title = c_Entry.s_Title
+        s_Subtitle = c_Entry.s_Subtitle
+        s_IconPath = c_Entry.s_IconPath
     }
 }

@@ -50,6 +50,10 @@ final class FSSetListViewModel: ObservableObject {
     private let c_Context = FSContext()
     private(set) var c_Selection = FSSelection()
     
+    var i_EntryCount: Int {
+        return c_Context.l_SetEntry.count
+    }
+    
     //************************************************************
     // Init
     //************************************************************
@@ -150,25 +154,40 @@ final class FSSetListViewModel: ObservableObject {
      *  Get a entry for a set.
      *
      *  - Parameter i_Entry: The set entry to request.
+     *  - Parameter s_Filter: The filter to apply to the set entry name.
+     *  - Parameter b_Exact: Wether the string has to match exactly or not.
      *
-     *  - Returns: The requested set.
+     *  - Returns: The requested set entry.
      */
     
-    func GetEntry(_ i_Entry: Int) -> FSContext.FSEntry? {
+    func GetEntry(i_Entry: Int, s_Filter: String, b_Exact: Bool) -> FSContext.FSEntry? {
         if (i_Entry < 0 || i_Entry >= c_Context.l_SetEntry.count) {
             return nil
         }
         
-        return c_Context.l_SetEntry[i_Entry]
-    }
-    
-    /**
-     *  Get the total card set count.
-     *
-     *  - Returns: The total card set count.
-     */
-    
-    func GetSetCount() -> Int {
-        return c_Context.l_SetEntry.count
+        let c_Entry = c_Context.l_SetEntry[i_Entry]
+        
+        // Apply filter
+        if (s_Filter.isEmpty) {
+            return c_Entry
+        }
+        
+        if (!b_Exact) {
+            // Ignore capitalization requires lowercasing
+            let s_Title = c_Entry.s_Title.lowercased()
+            let s_Substring = s_Filter.lowercased()
+            
+            if (!s_Title.contains(s_Substring)) {
+                return nil
+            }
+        } else {
+            // Standard, as-is
+            if (!c_Entry.s_Title.contains(s_Filter)) {
+                return nil
+            }
+        }
+        
+        // Filter passed
+        return c_Entry
     }
 }
