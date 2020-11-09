@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B411831E253369330002EA4A /* VActiveSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B411831D253369330002EA4A /* VActiveSet.swift */; };
 		B411833025338FCE0002EA4A /* SActiveSet.strings in Resources */ = {isa = PBXBuildFile; fileRef = B411833225338FCE0002EA4A /* SActiveSet.strings */; };
+		B4130FD22559899100E1E556 /* VCardTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4130FD12559899100E1E556 /* VCardTutorial.swift */; };
 		B413E85A25364B9600B741A2 /* VSettingsVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B413E85925364B9600B741A2 /* VSettingsVersion.swift */; };
 		B41BD36F2555DA1500F34F56 /* VMCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41BD36E2555DA1500F34F56 /* VMCard.swift */; };
 		B427A7FE253204950028D0C8 /* VSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427A7FD253204950028D0C8 /* VSearchBar.swift */; };
@@ -67,6 +68,7 @@
 		B411831D253369330002EA4A /* VActiveSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VActiveSet.swift; sourceTree = "<group>"; };
 		B411833125338FCE0002EA4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SActiveSet.strings; sourceTree = "<group>"; };
 		B411833425338FD10002EA4A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/SActiveSet.strings; sourceTree = "<group>"; };
+		B4130FD12559899100E1E556 /* VCardTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCardTutorial.swift; sourceTree = "<group>"; };
 		B413E85925364B9600B741A2 /* VSettingsVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSettingsVersion.swift; sourceTree = "<group>"; };
 		B41BD36E2555DA1500F34F56 /* VMCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMCard.swift; sourceTree = "<group>"; };
 		B427A7FD253204950028D0C8 /* VSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSearchBar.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				B4D92C52254B909E00C5F122 /* VSetCardsInfo.swift */,
+				B4130FD12559899100E1E556 /* VCardTutorial.swift */,
 				B435B8D325339CFE00C2B0A7 /* VCard.swift */,
 				B411831D253369330002EA4A /* VActiveSet.swift */,
 			);
@@ -481,6 +484,7 @@
 				B46FE9D8253630C7003D551D /* VSettingsButton.swift in Sources */,
 				B47A5B88254CCA9B000C5F18 /* VMSettings.swift in Sources */,
 				B4C5B4772530731900457A9E /* VSetInfo.swift in Sources */,
+				B4130FD22559899100E1E556 /* VCardTutorial.swift in Sources */,
 				B45C0D9225436DA4007279BC /* MCardSet.swift in Sources */,
 				B47A5B91254CD3B0000C5F18 /* VSettingsSearch.swift in Sources */,
 				B47A5B99254CEACF000C5F18 /* VLicenseApp.swift in Sources */,
@@ -662,9 +666,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = featherStack/featherStack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 211;
+				CURRENT_PROJECT_VERSION = 216;
 				DEVELOPMENT_ASSET_PATHS = "\"featherStack/Preview Content\"";
-				DEVELOPMENT_TEAM = A3JQ26ZNBA;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/frameworks";
 				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/include\"";
@@ -675,7 +679,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_DIR)/lib\"";
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = de.jens.broerken.featherStack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "./featherStack/featherStack-Bridging-Header.h";
@@ -692,9 +696,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = featherStack/featherStack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 211;
+				CURRENT_PROJECT_VERSION = 216;
 				DEVELOPMENT_ASSET_PATHS = "\"featherStack/Preview Content\"";
-				DEVELOPMENT_TEAM = A3JQ26ZNBA;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/frameworks";
@@ -706,7 +710,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_DIR)/lib\"";
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = de.jens.broerken.featherStack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "./featherStack/featherStack-Bridging-Header.h";

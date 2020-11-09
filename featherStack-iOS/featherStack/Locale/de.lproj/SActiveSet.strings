@@ -45,8 +45,14 @@
 "@ALERT_MESSAGE" = "Die Karte konnte nicht geladen werden.";
 "@ALERT_DISMISS" = "Ok";
 
+//************************************************************
+// VCardTutorial.swift
+//************************************************************
+
 // Usage Tutorial
 "@TUTORIAL_TITLE" = "Karten beantworten";
-"@TUTORIAL_MESSAGE_R" = "Tippen Sie die Karte an um die Antwort anzuzeigen. Wischen sie dann die Karte nach rechts wenn sie die Antwort kannten oder nach links falls nicht.";
-"@TUTORIAL_MESSAGE_L" = "Tippen Sie die Karte an um die Antwort anzuzeigen. Wischen sie dann die Karte nach links wenn sie die Antwort kannten oder nach rechts falls nicht.";
-"@TUTORIAL_DISMISS" = "Verstanden";
+"@TUTORIAL_SECTION_FLIP" = "1.";
+"@TUTORIAL_FLIP" = "Tippen Sie die Karte um die Antwort zu zeigen.";
+"@TUTORIAL_SECTION_NEXT" = "2.";
+"@TUTORIAL_NEXT_R" = "Wischen Sie die gedrehte Karte nach rechts falls Sie richtig lagen, nach links falls nicht.";
+"@TUTORIAL_NEXT_L" = "Wischen Sie die gedrehte Karte nach links falls Sie richtig lagen, nach rechts falls nicht.";

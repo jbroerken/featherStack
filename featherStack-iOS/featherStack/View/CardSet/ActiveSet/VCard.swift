@@ -177,16 +177,13 @@ struct FSCardView: View {
         }
         .padding([.leading, .trailing], 30)
         .padding([.top, .bottom], 60)
+        .sheet(isPresented: self.$b_ShowTutorial) { // Usage tutorial
+            FSCardTutorialView()
+        }
         .alert(isPresented: self.$c_Model.b_LoadFailed) { // Alert user on load fail
             Alert(title: Text("@ALERT_TITLE", tableName: "SActiveSet"),
                   message: Text("@ALERT_MESSAGE", tableName: "SActiveSet"),
                   dismissButton: .default(Text("@ALERT_DISMISS", tableName: "SActiveSet")))
-        }
-        .alert(isPresented: self.$b_ShowTutorial) { // Usage tutorial
-            Alert(title: Text("@TUTORIAL_TITLE", tableName: "SActiveSet"),
-                  message: Text((self.c_Settings.b_CDSwipeRightCorrect ? "@TUTORIAL_MESSAGE_R" : "@TUTORIAL_MESSAGE_L"),
-                                tableName: "SActiveSet"),
-                  dismissButton: .default(Text("@TUTORIAL_DISMISS", tableName: "SActiveSet")))
         }
     }
     
