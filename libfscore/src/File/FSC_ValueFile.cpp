@@ -128,7 +128,7 @@ void FSC_ValueFile::Read(std::string const& s_FilePath)
     while (getline(f_File, s_Line))
     {
         // Ignore comments and empty lines
-        if (s_Line.length() == 0 || s_Line[0] == L'#' || s_Line[0] == L'\n' || s_Line[0] == L'\r')
+        if (s_Line.length() == 0 || s_Line[0] == '#' || s_Line[0] == '\n' || s_Line[0] == '\r')
         {
             continue;
         }

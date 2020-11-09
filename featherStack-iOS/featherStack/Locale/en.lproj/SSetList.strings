@@ -31,6 +31,11 @@
 "@CMENU_PRACTICE" = "Practice";
 "@CMENU_READ" = "Read";
 
+// Import Failed Alert
+"@ALERT_TITLE" = "Import Failed";
+"@ALERT_MESSAGE" = "The card set could not be imported.";
+"@ALERT_DISMISS" = "Ok";
+
 //************************************************************
 // VAddSet.swift
 //************************************************************

@@ -42,12 +42,14 @@ final class FSSettingsFile {
     }
     
     enum FSSetting: Int, CaseIterable {
-        case CDSwipeRight = 0
-        case SClearTextOnNav = 1
-        case SExactString = 2
+        case TCard = 0
+        case CDSwipeRight = 1
+        case SClearTextOnNav = 2
+        case SExactString = 3
         
         var s_String: String {
             switch (self) {
+                case .TCard: return "Tutorial_Card="
                 case .CDSwipeRight: return "Card_SwipeRight="
                 case .SClearTextOnNav: return "Search_ClearTextOnNav="
                 case .SExactString: return "Search_ExactString="
@@ -56,6 +58,7 @@ final class FSSettingsFile {
         
         var b_Default: Any {
             switch (self) {
+                case .TCard: return true
                 case .CDSwipeRight: return true
                 case .SClearTextOnNav: return false
                 case .SExactString: return false
@@ -118,9 +121,10 @@ final class FSSettingsFile {
                         
                         switch ($0) {
                             // Boolean
+                            case .TCard: fallthrough
                             case .CDSwipeRight: fallthrough
                             case .SClearTextOnNav: fallthrough
-                            case .SExactString: l_Setting[$0.rawValue] = s_Value == "TRUE" ? true : false
+                            case .SExactString: l_Setting[$0.rawValue] = (s_Value == "TRUE" ? true : false)
                         }
                     }
                 }
@@ -155,6 +159,7 @@ final class FSSettingsFile {
             // We group based on value type
             switch ($0) {
                 // Boolean
+                case .TCard: fallthrough
                 case .CDSwipeRight: fallthrough
                 case .SClearTextOnNav: fallthrough
                 case .SExactString: s_Content += (l_Setting[$0.rawValue] as? Bool ?? false) ? "TRUE" : "FALSE"

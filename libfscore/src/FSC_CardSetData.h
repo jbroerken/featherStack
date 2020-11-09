@@ -32,7 +32,6 @@
 
 // Pre-defined
 #define FSC_CSD_STR_MAX_LENGTH                       511
-#define FSC_CSD_STR_BUFFER_LENGTH                    512
 
 
 //*************************************************************************************

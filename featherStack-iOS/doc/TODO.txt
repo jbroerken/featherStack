@@ -1,7 +1,0 @@
-###
-#
-#  featherStack-iOS Documentation ToDo
-#
-###
-
-- Add Documentation.

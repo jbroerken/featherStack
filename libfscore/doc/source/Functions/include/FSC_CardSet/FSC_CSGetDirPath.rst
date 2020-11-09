@@ -16,7 +16,7 @@ Syntax
 ------
 .. code-block:: c
 
-    const char* FSC_NONNULL FSC_CSGetDirPath(const FSC_CardSetOpaque* FSC_NONNULL p_Set);
+    const char* FSC_NULLABLE FSC_CSGetDirPath(const FSC_CardSetOpaque* FSC_NONNULL p_Set);
 
 
 Parameters

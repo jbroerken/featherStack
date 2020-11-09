@@ -28,7 +28,21 @@
 
 // Project
 
-// Pre-defined
+
+//*************************************************************************************
+// Version
+//*************************************************************************************
+
+#define FSC_LIB_VERSION_STRING          "1.1.0"
+
+#define FSC_LIB_VERSION_MAJOR           1
+#define FSC_LIB_VERSION_MINOR           1
+#define FSC_LIB_VERSION_PATCH           0
+
+//*************************************************************************************
+// Pointer
+//*************************************************************************************
+
 #ifdef __clang__
     #define FSC_NULLABLE _Nullable
     #define FSC_NONNULL _Nonnull

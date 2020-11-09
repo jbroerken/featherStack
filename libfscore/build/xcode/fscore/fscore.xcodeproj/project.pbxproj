@@ -29,6 +29,7 @@
 		B4655FCB2542FA04009F0CC0 /* FSC_Card.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FB42542FA04009F0CC0 /* FSC_Card.h */; };
 		B4655FCC2542FA04009F0CC0 /* FSC_Context.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FB52542FA04009F0CC0 /* FSC_Context.h */; };
 		B4655FCD2542FA04009F0CC0 /* FSC_Error.h in Headers */ = {isa = PBXBuildFile; fileRef = B4655FB72542FA04009F0CC0 /* FSC_Error.h */; };
+		B478793C2558935300906791 /* FSC_ImportFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B478793B2558935300906791 /* FSC_ImportFile.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,9 @@
 		B4655FB42542FA04009F0CC0 /* FSC_Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_Card.h; sourceTree = "<group>"; };
 		B4655FB52542FA04009F0CC0 /* FSC_Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_Context.h; sourceTree = "<group>"; };
 		B4655FB72542FA04009F0CC0 /* FSC_Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSC_Error.h; sourceTree = "<group>"; };
+		B47879392558862600906791 /* FSC_ImportFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSC_ImportFile.h; sourceTree = "<group>"; };
+		B478793A2558870200906791 /* FSC_ImportFileData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSC_ImportFileData.h; sourceTree = "<group>"; };
+		B478793B2558935300906791 /* FSC_ImportFile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FSC_ImportFile.cpp; sourceTree = "<group>"; };
 		B4EC412C25431E3A00B0E081 /* FSC_Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSC_Common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +100,8 @@
 				B4655FA92542FA04009F0CC0 /* FSC_CardData.h */,
 				B4655FAA2542FA04009F0CC0 /* FSC_CardSet.cpp */,
 				B4655FB12542FA04009F0CC0 /* FSC_CardSetData.h */,
+				B478793B2558935300906791 /* FSC_ImportFile.cpp */,
+				B478793A2558870200906791 /* FSC_ImportFileData.h */,
 				B4655FA82542FA04009F0CC0 /* FSC_Context.cpp */,
 				B4655FAB2542FA04009F0CC0 /* FSC_ContextData.h */,
 			);
@@ -142,6 +148,7 @@
 				B4655FB62542FA04009F0CC0 /* Error */,
 				B4655FB42542FA04009F0CC0 /* FSC_Card.h */,
 				B4655FB32542FA04009F0CC0 /* FSC_CardSet.h */,
+				B47879392558862600906791 /* FSC_ImportFile.h */,
 				B4655FB52542FA04009F0CC0 /* FSC_Context.h */,
 				B4EC412C25431E3A00B0E081 /* FSC_Common.h */,
 			);
@@ -245,6 +252,7 @@
 				B4655FBF2542FA04009F0CC0 /* FSC_ValueFile.cpp in Sources */,
 				B4655FC32542FA04009F0CC0 /* FSC_CardSet.cpp in Sources */,
 				B4655FB92542FA04009F0CC0 /* FSC_CSLoader.cpp in Sources */,
+				B478793C2558935300906791 /* FSC_ImportFile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

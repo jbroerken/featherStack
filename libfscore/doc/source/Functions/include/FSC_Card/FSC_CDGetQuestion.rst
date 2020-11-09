@@ -33,7 +33,7 @@ Parameters
 
 Return Value
 ------------
-The UTF-8 question string.
+The UTF-8 question **string** on success, **NULL** on failure.
 
 Remarks
 -------

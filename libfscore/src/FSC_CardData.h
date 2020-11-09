@@ -34,7 +34,6 @@
 
 // Pre-defined
 #define FSC_CD_STR_MAX_LENGTH                       511
-#define FSC_CD_STR_BUFFER_LENGTH                    512
 
 
 //*************************************************************************************

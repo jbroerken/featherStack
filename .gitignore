@@ -33,3 +33,6 @@
 
 # macOS
 *.DS_Store
+*.xcuserstate
+*.xcuserstate
+featherStack-iOS/featherStack.xcodeproj/project.xcworkspace/xcuserdata/Jens.xcuserdatad/UserInterfaceState.xcuserstate

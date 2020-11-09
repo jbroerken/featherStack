@@ -21,15 +21,15 @@
 
 // Imports
 import Foundation
-import Zip
 
 
-final class FSContext {
+final class FSContext: FSImport {
     
     //************************************************************
     // Types
     //************************************************************
     
+    typealias CContext = OpaquePointer
     typealias CCardSet = OpaquePointer
     
     final class FSEntry: Identifiable {
@@ -38,10 +38,9 @@ final class FSContext {
         // Variables
         //************************************************************
         
-        let s_ID = UUID()
-        
         fileprivate var i_CoreIndex: Int
         
+        let s_ID = UUID()
         let s_Title: String
         let s_Subtitle: String
         let s_IconPath: String
@@ -73,7 +72,6 @@ final class FSContext {
         case CreateFailed
         case InvalidSet
         case ImportFailed
-        case InvalidImport
         
         var s_String: String {
             switch (self) {
@@ -82,7 +80,6 @@ final class FSContext {
                 case .NoSet: return "No set found"
                 case .InvalidSet: return "Invalid set data"
                 case .ImportFailed: return "Failed to import new set"
-                case .InvalidImport: return "Invalid import file"
             }
         }
     }
@@ -93,7 +90,7 @@ final class FSContext {
     
     private(set) var l_SetEntry: [FSEntry] = [FSEntry]()
     
-    private var p_Context: OpaquePointer? = nil
+    private var p_Context: CContext? = nil
     
     //************************************************************
     // Init / Deinit
@@ -103,7 +100,7 @@ final class FSContext {
      *  Initialize the context.
      */
     
-    init() {
+    override init() { // FSImport has no initializer, override basic
         // Check text file and create if missing, fscore requires the files
         // to exist. Failing to create a file will cause reload() to fail
         do {
@@ -158,6 +155,7 @@ final class FSContext {
             }
             
             p_Context = p_New
+            
         } catch let e as FSError {
             FSCommon.Log(e.s_String)
             throw FSError.NoContext
@@ -245,6 +243,7 @@ final class FSContext {
                                 s_IconPath: s_IconPath)
             
             l_SetEntry.insert(c_Set, at: 0)
+            
         } catch let e as FSCommon.FSError {
             FSCommon.Log(e.s_String)
         } catch let e {
@@ -261,72 +260,19 @@ final class FSContext {
      */
     
     func AddSet(_ s_Source: URL) throws -> Void {
-        
-        //
-        // This could be a lot nicer:
-        //
-        // - What happens if a zip file contains more files than the usual types (txt, png)?
-        // - The import file could allow for a much better structure using an identifier
-        // - What about zip files which include a diretory to the set (set2.zip -> set2/set2/Import.txt)
-        // - What about coflicting dir names which respond to different sets?
-        //
-        
         guard let p_Current = p_Context else {
             throw FSError.NoContext
         }
         
+        // Use import subclass
         do {
-            // Copy to documents and extract
-            let s_LocalZip = try FSCommon.GetDocumentsPath("current.zip")
-            try FSCommon.CopyContent(s_SourcePath: s_Source.path,
-                                     s_DestinationPath: s_LocalZip)
+            try Import(p_Context: p_Current, s_ZipURL: s_Source)
             
-            // Special block here, we always remove the .zip
-            var s_Destination: URL
-            do {
-                s_Destination = try Zip.quickUnzipFile(s_Source)
-                FSCommon.RemoveContent(s_LocalZip)
-            } catch let e {
-                FSCommon.RemoveContent(s_LocalZip)
-                throw e // Handoff
-            }
+            // All done, register and clean uo
+            AddEntry(FSC_COGetSetCount(p_Current) - 1) // Never a flip, set added to fscore
             
-            // Read import file and check conflict
-            do {
-                let s_Content = try String(contentsOf: s_Destination.appendingPathComponent("Import.txt"),
-                                           encoding: .utf8).components(separatedBy: .newlines)
-                
-                if (s_Content.count != 2) {
-                    throw FSError.InvalidImport // We need set dir and file
-                }
-                
-                // Already Existing?
-                let b_Exists = try FSCommon.FileExists(FSCommon.GetDocumentsPath(s_Content[1]))
-                if (b_Exists) {
-                    return;
-                }
-                
-                // Copy set dir
-                try FSCommon.CopyContent(s_SourcePath: s_Destination.appendingPathComponent(s_Content[1]).path,
-                                         s_DestinationPath: FSCommon.GetDocumentsPath(s_Content[1]))
-                
-                // Import text to context
-                if (FSC_COAddSet(p_Current, s_Destination.appendingPathComponent(s_Content[0]).path.cString(using: .utf8)!) < 0) {
-                    throw FSError.InvalidSet
-                }
-                
-                // All done, register and clean uo
-                AddEntry(FSC_COGetSetCount(p_Current) - 1) // Never a flip, set added to fscore
-                FSCommon.RemoveContent(s_Destination.path)
-            } catch let e {
-                FSCommon.RemoveContent(s_Destination.path)
-                throw e
-            }
-        } catch let e as FSError {
+        } catch let e as FSImport.FSError {
             FSCommon.Log(e.s_String)
-            throw FSError.ImportFailed
-        } catch let e {
-            FSCommon.Log(e.localizedDescription)
             throw FSError.ImportFailed
         }
     }
@@ -370,6 +316,7 @@ final class FSContext {
             }
             
             FSCommon.RemoveContent(s_Path)
+            
         } catch let e as FSCommon.FSError {
             FSCommon.Log(e.s_String)
         }

@@ -15,7 +15,7 @@ Syntax
 ------
 .. code-block:: c
 
-    const char* FSC_NONNULL FSC_CDGetData(const FSC_CardOpaque* FSC_NONNULL p_Card);
+    const char* FSC_NULLABLE FSC_CDGetData(const FSC_CardOpaque* FSC_NONNULL p_Card);
 
 
 Parameters
@@ -32,8 +32,9 @@ Parameters
 
 Return Value
 ------------
-The UTF-8 card data string for the 
-:doc:`card type <../../../Enumerations/include/FSC_Card/FSC_CDType>`.
+The UTF-8 card data **string** for the 
+:doc:`card type <../../../Enumerations/include/FSC_Card/FSC_CDType>` on success, 
+**NULL** on failure.
 
 Remarks
 -------

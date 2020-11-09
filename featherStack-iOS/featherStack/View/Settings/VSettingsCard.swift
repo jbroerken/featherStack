@@ -39,6 +39,7 @@ struct FSSettingsCardView: View {
     var body: some View {
         ZStack {
             List {
+                // Swipe direction
                 Section(header: Text("@CARD_SWIPE_SECTION", tableName: "SSettings")
                             .padding(.top),
                         footer: Text("@CARD_SWIPE_INFO", tableName: "SSettings")) {

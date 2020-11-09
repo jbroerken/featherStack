@@ -25,6 +25,7 @@
 		B475009C254F7B9600ACD4C7 /* VLicenseZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475009B254F7B9600ACD4C7 /* VLicenseZip.swift */; };
 		B47500B225500E0200ACD4C7 /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47500AD254F833300ACD4C7 /* Zip.framework */; };
 		B47500B325500E0200ACD4C7 /* Zip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47500AD254F833300ACD4C7 /* Zip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B47879412558B17100906791 /* MImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47879402558B17100906791 /* MImport.swift */; };
 		B47A2F97253125FD00920E42 /* SSettings.strings in Resources */ = {isa = PBXBuildFile; fileRef = B47A2F99253125FD00920E42 /* SSettings.strings */; };
 		B47A5B88254CCA9B000C5F18 /* VMSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A5B87254CCA9B000C5F18 /* VMSettings.swift */; };
 		B47A5B91254CD3B0000C5F18 /* VSettingsSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A5B90254CD3B0000C5F18 /* VSettingsSearch.swift */; };
@@ -82,6 +83,7 @@
 		B4750097254F7AAC00ACD4C7 /* VSettingsLicense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSettingsLicense.swift; sourceTree = "<group>"; };
 		B475009B254F7B9600ACD4C7 /* VLicenseZip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLicenseZip.swift; sourceTree = "<group>"; };
 		B47500AD254F833300ACD4C7 /* Zip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Zip.framework; path = frameworks/Zip.framework; sourceTree = "<group>"; };
+		B47879402558B17100906791 /* MImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MImport.swift; sourceTree = "<group>"; };
 		B47A2F98253125FD00920E42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SSettings.strings; sourceTree = "<group>"; };
 		B47A2F9A2531260200920E42 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/SSettings.strings; sourceTree = "<group>"; };
 		B47A5B87254CCA9B000C5F18 /* VMSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMSettings.swift; sourceTree = "<group>"; };
@@ -159,6 +161,14 @@
 			path = License;
 			sourceTree = "<group>";
 		};
+		B478793F2558B14400906791 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				B47879402558B17100906791 /* MImport.swift */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
 		B47A2F89253122A700920E42 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +211,7 @@
 		B499EFBC2544B7AE00B845AC /* CardSet */ = {
 			isa = PBXGroup;
 			children = (
+				B478793F2558B14400906791 /* Import */,
 				B4F2856A2540B07400499F5C /* MContext.swift */,
 				B45C0D9125436DA4007279BC /* MCardSet.swift */,
 				B499EFBF2544C9B900B845AC /* MCard.swift */,
@@ -460,6 +471,7 @@
 				B413E85A25364B9600B741A2 /* VSettingsVersion.swift in Sources */,
 				B4E63CCD25499EF800B53EAD /* VMActiveSet.swift in Sources */,
 				B47A5BA1254DBDC0000C5F18 /* MSettingsFile.swift in Sources */,
+				B47879412558B17100906791 /* MImport.swift in Sources */,
 				B4E0CE48252FB8DF00005927 /* featherStackApp.swift in Sources */,
 				B46FE9DE2536379E003D551D /* VSettingsCard.swift in Sources */,
 				B411831E253369330002EA4A /* VActiveSet.swift in Sources */,
@@ -650,9 +662,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = featherStack/featherStack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 188;
+				CURRENT_PROJECT_VERSION = 211;
 				DEVELOPMENT_ASSET_PATHS = "\"featherStack/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = A3JQ26ZNBA;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/frameworks";
 				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/include\"";
@@ -663,6 +675,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_DIR)/lib\"";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = de.jens.broerken.featherStack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "./featherStack/featherStack-Bridging-Header.h";
@@ -679,9 +692,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = featherStack/featherStack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 188;
+				CURRENT_PROJECT_VERSION = 211;
 				DEVELOPMENT_ASSET_PATHS = "\"featherStack/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = A3JQ26ZNBA;
 				ENABLE_PREVIEWS = YES;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/frameworks";
@@ -693,6 +706,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_DIR)/lib\"";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = de.jens.broerken.featherStack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "./featherStack/featherStack-Bridging-Header.h";

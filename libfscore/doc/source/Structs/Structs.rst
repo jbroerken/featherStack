@@ -22,5 +22,6 @@ Internal Structs
 
   src/FSC_CardData/FSC_Card
   src/FSC_CardSetData/FSC_CardSet
+  src/FSC_ImportFileData/FSC_ImportFile
   src/FSC_ContextData/FSC_Context
   src/FSC_ContextData/FSC_Entry

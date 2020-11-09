@@ -20,8 +20,6 @@
  */
 
 // C++ / C
-#include <cstdlib>
-#include <cerrno>
 
 // External
 

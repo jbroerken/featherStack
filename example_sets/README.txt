@@ -1,8 +1,10 @@
 ###
 #
-#  Set Creation ReadMe
+#  Card Sets ReadMe
 #
 ###
+
+The set archives listed here serve as a starting point to create your own card sets.
 
 Sets are created as .zip files. To create a valid zip file, select the INDIVIDUAL FILES (the folder, 
 the set file and the import file) and combine them to a zip file. Make sure to not use a folder name

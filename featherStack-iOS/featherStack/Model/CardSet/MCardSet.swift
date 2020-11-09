@@ -50,7 +50,12 @@ final class FSCardSet {
     private var p_Set: FSContext.CCardSet?
     
     var s_Title: String {
-        return p_Set != nil ? String(cString: FSC_CSGetTitle(p_Set!)) : ""
+        guard let p_Current = p_Set else {
+            return ""
+        }
+        
+        let p_String = FSC_CSGetTitle(p_Current)
+        return p_String != nil ? String(cString: p_String!) : ""
     }
     var i_TotalCount: Int {
         return p_Set != nil ? FSC_CSGetTotalCount(p_Set!) : 0
@@ -59,7 +64,12 @@ final class FSCardSet {
         return p_Set != nil ? FSC_CSGetRemainingCount(p_Set!) : 0
     }
     var s_DirPath: String {
-        return p_Set != nil ? String(cString: FSC_CSGetDirPath(p_Set!)) : ""
+        guard let p_Current = p_Set else {
+            return ""
+        }
+        
+        let p_String = FSC_CSGetDirPath(p_Current)
+        return p_String != nil ? String(cString: p_String!) : ""
     }
     
     // NOTE: The set loads, so the callback belongs in the set
@@ -97,13 +107,15 @@ final class FSCardSet {
      */
     
     deinit {
-        if let p_Current = p_Set {
-            do {
-                p_Set = try c_Context.DestroySet(p_Current)
-            } catch let e as FSContext.FSError {
-                FSCommon.Log(e.s_String)
-            } catch {}
+        guard let p_Current = p_Set else {
+            return
         }
+        
+        do {
+            p_Set = try c_Context.DestroySet(p_Current)
+        } catch let e as FSContext.FSError {
+            FSCommon.Log(e.s_String)
+        } catch {}
     }
     
     //************************************************************

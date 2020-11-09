@@ -7,3 +7,9 @@
 1.0:
 ----
 - Initial release.
+
+1.1:
+----
+- Better file importing.
+- UI tweaks.
+- Added alerts for failed file loading and set importing.

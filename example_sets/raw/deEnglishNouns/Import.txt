@@ -1,2 +1,12 @@
-deEnNouns.txt
-deEnNouns
+SetFile=deEnNouns.txt
+Directory=deEnNouns
+File=1.txt
+File=2.txt
+File=3.txt
+File=4.txt
+File=5.txt
+File=6.txt
+File=Banner.png
+File=Set.txt
+File=Assets/Bike.png
+File=Assets/Apple.png

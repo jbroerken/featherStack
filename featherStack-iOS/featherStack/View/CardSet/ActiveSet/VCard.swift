@@ -48,6 +48,7 @@ struct FSCardView: View {
     // NOTE: These need to be here, swiftui goes crazy otherwise
     @State private var e_State: FSState = .Appear
     @State private var c_Offset: CGSize = .zero
+    @State private var b_ShowTutorial = false
     
     private let FSC_Image: Int32 = FSC_CDTYPE_IMAGE.rawValue // NOTE: Segfault 11 for C Enum <.<
     
@@ -109,6 +110,7 @@ struct FSCardView: View {
                     .padding()
             }
             
+            // Always show the question
             Text(self.c_Model.s_Question)
                 .font(.title2)
                 .foregroundColor(Color("CardTitleTextColor"))
@@ -164,6 +166,9 @@ struct FSCardView: View {
                 self.CardDisappear()
             }
         )
+        .onAppear {
+            self.ShowTutorial()
+        }
         .onReceive(c_Model.objectWillChange, perform: { _ in
             self.CardAppear()
         })
@@ -172,11 +177,16 @@ struct FSCardView: View {
         }
         .padding([.leading, .trailing], 30)
         .padding([.top, .bottom], 60)
-        .alert(isPresented: self.$c_Model.b_LoadFailed) {
-            // Alert user on load fail
+        .alert(isPresented: self.$c_Model.b_LoadFailed) { // Alert user on load fail
             Alert(title: Text("@ALERT_TITLE", tableName: "SActiveSet"),
                   message: Text("@ALERT_MESSAGE", tableName: "SActiveSet"),
                   dismissButton: .default(Text("@ALERT_DISMISS", tableName: "SActiveSet")))
+        }
+        .alert(isPresented: self.$b_ShowTutorial) { // Usage tutorial
+            Alert(title: Text("@TUTORIAL_TITLE", tableName: "SActiveSet"),
+                  message: Text((self.c_Settings.b_CDSwipeRightCorrect ? "@TUTORIAL_MESSAGE_R" : "@TUTORIAL_MESSAGE_L"),
+                                tableName: "SActiveSet"),
+                  dismissButton: .default(Text("@TUTORIAL_DISMISS", tableName: "SActiveSet")))
         }
     }
     
@@ -259,6 +269,21 @@ struct FSCardView: View {
             }
             
             c_Model.Invalidate() // Specifically invalidate, return before new construction
+        }
+    }
+    
+    //************************************************************
+    // Tutorial
+    //************************************************************
+    
+    /**
+     *  Show the card tutorial.
+     */
+    
+    private func ShowTutorial() -> Void {
+        if (self.c_Settings.b_TShowCard) {
+            self.b_ShowTutorial.toggle() // Trigger refresh
+            self.c_Settings.b_TShowCard = false // Shown, do not show again
         }
     }
     

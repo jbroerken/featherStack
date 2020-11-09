@@ -30,6 +30,14 @@ final class FSSettingsViewModel: ObservableObject {
     // Variables
     //************************************************************
     
+    // Tutorial
+    @Published var b_TShowCard: Bool {
+        didSet {
+            Write(e_Setting: FSSettingsFile.FSSetting.TCard,
+                  a_Value: b_TShowCard)
+        }
+    }
+    
     // Card settings
     @Published var b_CDSwipeRightCorrect: Bool {
         didSet {
@@ -71,6 +79,7 @@ final class FSSettingsViewModel: ObservableObject {
         } catch {}
         
         // Copy the either read or default values
+        b_TShowCard = (c_File.GetValue(e_Setting: .TCard) as? Bool)!
         b_CDSwipeRightCorrect = (c_File.GetValue(e_Setting: .CDSwipeRight) as? Bool)!
         b_SClearTextOnNav = (c_File.GetValue(e_Setting: .SClearTextOnNav) as? Bool)!
         b_SExactString = (c_File.GetValue(e_Setting: .SExactString) as? Bool)!
