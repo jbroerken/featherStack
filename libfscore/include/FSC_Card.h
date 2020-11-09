@@ -80,7 +80,7 @@ extern "C"
      *  \return The card type data on success, NULL on failure.
      */
     
-    extern const char* FSC_NONNULL FSC_CDGetData(const FSC_CardOpaque* FSC_NONNULL p_Card);
+    extern const char* FSC_NULLABLE FSC_CDGetData(const FSC_CardOpaque* FSC_NONNULL p_Card);
     
     /**
      *  Get the card header.
@@ -90,7 +90,7 @@ extern "C"
      *  \return The card header on success, NULL on failure.
      */
     
-    extern const char* FSC_NONNULL FSC_CDGetQuestion(const FSC_CardOpaque* FSC_NONNULL p_Card);
+    extern const char* FSC_NULLABLE FSC_CDGetQuestion(const FSC_CardOpaque* FSC_NONNULL p_Card);
     
     /**
      *  Get a card answer.
@@ -100,7 +100,7 @@ extern "C"
      *  \return The card answer on success, NULL on failure.
      */
     
-    extern const char* FSC_NONNULL FSC_CDGetAnswer(const FSC_CardOpaque* FSC_NONNULL p_Card);
+    extern const char* FSC_NULLABLE FSC_CDGetAnswer(const FSC_CardOpaque* FSC_NONNULL p_Card);
     
 #ifdef __cplusplus
 }

@@ -110,6 +110,7 @@ struct FSCardView: View {
                     .padding()
             }
             
+            // Always show the question
             Text(self.c_Model.s_Question)
                 .font(.title2)
                 .foregroundColor(Color("CardTitleTextColor"))

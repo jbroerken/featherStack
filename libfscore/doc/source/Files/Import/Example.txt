@@ -1,2 +1,5 @@
-enJpNouns.txt
-enJpNouns
+SetFile=enJpNouns.txt
+Directory=enJpNouns
+File=Card1.txt
+File=Card2.txt
+File=Assets/Bike.png

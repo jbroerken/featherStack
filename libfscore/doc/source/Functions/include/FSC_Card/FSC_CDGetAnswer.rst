@@ -32,7 +32,7 @@ Parameters
 
 Return Value
 ------------
-The UTF-8 answer string.
+The UTF-8 answer **string** on success, **NULL** on failure.
 
 Remarks
 -------

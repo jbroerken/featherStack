@@ -28,6 +28,7 @@
 
 // Project
 #include "./FSC_CardSet.h"
+#include "./FSC_ImportFile.h"
 
 
 #ifdef __cplusplus

@@ -40,13 +40,28 @@ final class FSCard {
         return p_Card != nil ? FSC_CDGetType(p_Card!) : -1
     }
     var s_Data: String {
-        return p_Card != nil ? String(cString: FSC_CDGetData(p_Card!)) : ""
+        guard let p_Current = p_Card else {
+            return ""
+        }
+        
+        let p_String = FSC_CDGetData(p_Current)
+        return p_String != nil ? String(cString: p_String!) : ""
     }
     var s_Question: String {
-        return p_Card != nil ? String(cString: FSC_CDGetQuestion(p_Card!)) : ""
+        guard let p_Current = p_Card else {
+            return ""
+        }
+        
+        let p_String = FSC_CDGetQuestion(p_Current)
+        return p_String != nil ? String(cString: p_String!) : ""
     }
     var s_Answer: String {
-        return p_Card != nil ? String(cString: FSC_CDGetAnswer(p_Card!)) : ""
+        guard let p_Current = p_Card else {
+            return ""
+        }
+        
+        let p_String = FSC_CDGetAnswer(p_Current)
+        return p_String != nil ? String(cString: p_String!) : ""
     }
     
     //************************************************************
@@ -74,12 +89,14 @@ final class FSCard {
      */
     
     deinit {
-        if let p_Current = p_Card {
-            do {
-                try c_Set.DestroyCard(p_Card: p_Current, b_Completed: b_Completed)
-            } catch let e as FSCardSet.FSError {
-                FSCommon.Log(e.s_String)
-            } catch {}
+        guard let p_Current = p_Card else {
+            return
         }
+        
+        do {
+            try c_Set.DestroyCard(p_Card: p_Current, b_Completed: b_Completed)
+        } catch let e as FSCardSet.FSError {
+            FSCommon.Log(e.s_String)
+        } catch {}
     }
 }

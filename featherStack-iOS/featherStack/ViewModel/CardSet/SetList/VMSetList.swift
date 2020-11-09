@@ -46,6 +46,7 @@ final class FSSetListViewModel: ObservableObject {
     //************************************************************
     
     @Published private var b_Changed = false // Toggle
+    @Published var b_ImportFailed = false
     
     private let c_Context = FSContext()
     private(set) var c_Selection = FSSelection()
@@ -66,6 +67,7 @@ final class FSSetListViewModel: ObservableObject {
         do {
             try c_Context.Reload()
             b_Changed.toggle()
+            
         } catch let e as FSContext.FSError {
             FSCommon.Log(e.s_String)
         } catch {}
@@ -85,9 +87,14 @@ final class FSSetListViewModel: ObservableObject {
         do {
             try c_Context.AddSet(s_URL)
             b_Changed.toggle()
+            
         } catch let e as FSContext.FSError {
             FSCommon.Log(e.s_String)
-        } catch {}
+            b_ImportFailed = true
+        } catch let e {
+            FSCommon.Log(e.localizedDescription)
+            b_ImportFailed = true
+        }
     }
     
     //************************************************************

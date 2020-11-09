@@ -24,6 +24,12 @@ Library Functions
   include/FSC_CardSet/FSC_CSGetRemainingCount
   include/FSC_CardSet/FSC_CSGetFinished
   include/FSC_CardSet/FSC_CSGetDirPath
+  include/FSC_ImportFile/FSC_IFCreate
+  include/FSC_ImportFile/FSC_IFDestroy
+  include/FSC_ImportFile/FSC_IFGetSetFile
+  include/FSC_ImportFile/FSC_IFGetDirName
+  include/FSC_ImportFile/FSC_IFGetFileCount
+  include/FSC_ImportFile/FSC_IFGetFilePath
   include/FSC_Context/FSC_COCreate
   include/FSC_Context/FSC_CODestroy
   include/FSC_Context/FSC_COCreateSet
@@ -51,12 +57,15 @@ Internal Functions
   src/FSC_CardSetData/FSC_CardSet/~FSC_CardSet_t
   src/FSC_CardSetData/FSC_CardSet/Reload
   src/FSC_CardSetData/FSC_CardSet/CardSetup
+  src/FSC_ImportFileData/FSC_ImportFile/FSC_ImportFile_t
+  src/FSC_ImportFileData/FSC_ImportFile/~FSC_ImportFile_t
   src/FSC_ContextData/FSC_Context/FSC_Context_t
   src/FSC_ContextData/FSC_Context/~FSC_Context_t
   src/FSC_ContextData/FSC_Entry/FSC_Entry_t
   src/FSC_ContextData/FSC_Entry/~FSC_Entry_t
   src/FSC_CardData/FSC_CDUsable
   src/FSC_CardSetData/FSC_CSUsable
+  src/FSC_ImportFile/FSC_IFUsable
   src/FSC_Context/FSC_COGetEntry
   src/CardSet/FSC_CSStorage/FSC_CSStorage/FSC_CSStorage
   src/CardSet/FSC_CSStorage/FSC_CSStorage/~FSC_CSStorage

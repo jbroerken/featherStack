@@ -86,14 +86,14 @@ extern "C"
      *  \return The title string on success, NULL failure.
      */
     
-    extern const char* FSC_NONNULL FSC_CSGetTitle(const FSC_CardSetOpaque* FSC_NONNULL p_Set);
+    extern const char* FSC_NULLABLE FSC_CSGetTitle(const FSC_CardSetOpaque* FSC_NONNULL p_Set);
     
     /**
      *  Get the total card set card count.
      *
      *  \param p_Set The set to check.
      *
-     *  \return The total card set card count.
+     *  \return The total card set card count on succes, 0 (default) on failure.
      */
     
     extern size_t FSC_CSGetTotalCount(const FSC_CardSetOpaque* FSC_NONNULL p_Set);
@@ -103,7 +103,7 @@ extern "C"
      *
      *  \param p_Set The set to check.
      *
-     *  \return The remaining card set card count.
+     *  \return The remaining card set card count on success, 0 (default) on failure.
      */
     
     extern size_t FSC_CSGetRemainingCount(const FSC_CardSetOpaque* FSC_NONNULL p_Set);
@@ -123,13 +123,13 @@ extern "C"
      *
      *  \param p_Set The set to check.
      *
-     *  \return The card set directory.
+     *  \return The card set directoryon success, NULL on failure.
      */
     
-    extern const char* FSC_NONNULL FSC_CSGetDirPath(const FSC_CardSetOpaque* FSC_NONNULL p_Set);
+    extern const char* FSC_NULLABLE FSC_CSGetDirPath(const FSC_CardSetOpaque* FSC_NONNULL p_Set);
     
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* FSC_Card_h */
+#endif /* FSC_CardSet_h */

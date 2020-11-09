@@ -20,5 +20,6 @@ Internal Enumerations
 .. toctree::
   :maxdepth: 1
 
+  src/FSC_ImportFile/Identifier
   src/FSC_Context/Identifier
   src/CardSet/FSC_CSLoader/Identifier

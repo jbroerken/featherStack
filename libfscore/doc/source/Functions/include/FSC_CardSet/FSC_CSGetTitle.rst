@@ -15,7 +15,7 @@ Syntax
 ------
 .. code-block:: c
 
-    const char* FSC_NONNULL FSC_CSGetTitle(const FSC_CardSetOpaque* FSC_NONNULL p_Set);
+    const char* FSC_NULLABLE FSC_CSGetTitle(const FSC_CardSetOpaque* FSC_NONNULL p_Set);
 
 
 Parameters

@@ -72,6 +72,10 @@ Variables
       - @Published Bool
       - The context changed flag.
       - Private
+    * - b_ImportFailed
+      - @Published Bool
+      - The set import failed flag.
+      - Internal
     * - c_Context
       - :doc:`../../../Models/CardSet/MContext`
       - The model to interact with.

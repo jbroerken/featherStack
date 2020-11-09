@@ -173,6 +173,11 @@ struct FSSetListView: View {
                 self.c_Model.AddSet(self.s_AddURL)
             }
         }
+        .alert(isPresented: self.$c_Model.b_ImportFailed) { // File import failed
+            Alert(title: Text("@ALERT_TITLE", tableName: "SSetList"),
+                  message: Text("@ALERT_MESSAGE", tableName: "SSetList"),
+                  dismissButton: .default(Text("@ALERT_DISMISS", tableName: "SSetList")))
+        }
     }
     
     //************************************************************

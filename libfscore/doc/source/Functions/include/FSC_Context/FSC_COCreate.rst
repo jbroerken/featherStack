@@ -30,7 +30,7 @@ Parameters
     * - p_DirPath
       - The UTF-8 directory path to use.
     * - p_FileName
-      - The UTF-8 contet file name in the given directory.
+      - The UTF-8 context file name in the given directory.
     * - us_CacheLimit
       - The card storage cache limit for all context created sets.
 

@@ -16,6 +16,7 @@ Internal Namespaces
 .. toctree::
   :maxdepth: 1
 
+  src/FSC_ImportFile/Anonymous
   src/FSC_Context/Anonymous
   src/CardSet/FSC_CSList/Anonymous
   src/CardSet/FSC_CSLoader/Anonymous

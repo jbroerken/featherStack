@@ -31,6 +31,11 @@
 "@CMENU_PRACTICE" = "Übung";
 "@CMENU_READ" = "Wiederholung";
 
+// Import Failed Alert
+"@ALERT_TITLE" = "Import Fehlgeschlagen";
+"@ALERT_MESSAGE" = "Die Sammlung konnte nicht importiert werden.";
+"@ALERT_DISMISS" = "Ok";
+
 //************************************************************
 // VAddSet.swift
 //************************************************************

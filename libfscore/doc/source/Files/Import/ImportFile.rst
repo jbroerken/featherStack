@@ -11,8 +11,10 @@ The following example file structure shows a standard import file.
 
 Values
 ------
-**First Line**: The first line contains only the name of the card set file 
-(with the file extension).
+**SetFile=<Set File>**: The set file to import.
 
-**Second Line**: The second line contains only the directory name of the card 
-set files (cards, assets).
+**Directory=<Directory Name>**: The name of the directory containing all set 
+assets.
+
+**File=<Relative File Path>**: The relative file path of a file belonging to 
+the set. The path is relative to the given directory name and its location.
