@@ -1,6 +1,6 @@
-**********
-ViewModels
-**********
+***********
+View Models
+***********
 This collection of view models contains all "bridges" requiered for the app to 
 allow for interaction of model data when displaying views.
 

@@ -11,3 +11,7 @@
 1.1.0:
 ------
 - Added import file support.
+
+1.2.0:
+------
+- Import file improvements.

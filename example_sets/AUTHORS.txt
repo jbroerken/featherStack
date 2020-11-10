@@ -1,6 +1,6 @@
 ###
 #
-#  featherStack Example Sets Authors
+#  example_sets Authors
 #
 ###
 

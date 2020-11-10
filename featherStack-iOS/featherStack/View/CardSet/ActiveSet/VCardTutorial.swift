@@ -59,7 +59,7 @@ struct FSCardTutorialView: View {
                 .renderingMode(.original)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .shadow(radius: 5)
+                .shadow(color: Color.black.opacity(0.2), radius: 4)
             
             Text("@TUTORIAL_FLIP", tableName: "SActiveSet")
                 .multilineTextAlignment(.center)
@@ -78,7 +78,7 @@ struct FSCardTutorialView: View {
                     .renderingMode(.original)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .shadow(radius: 5)
+                    .shadow(color: Color.black.opacity(0.2), radius: 4)
                 
                 Text("@TUTORIAL_NEXT_R", tableName: "SActiveSet")
                     .multilineTextAlignment(.center)
@@ -89,7 +89,7 @@ struct FSCardTutorialView: View {
                     .renderingMode(.original)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .shadow(radius: 5)
+                    .shadow(color: Color.black.opacity(0.2), radius: 4)
                 
                 Text("@TUTORIAL_NEXT_L", tableName: "SActiveSet")
                     .multilineTextAlignment(.center)

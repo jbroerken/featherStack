@@ -1,7 +1,0 @@
-###
-#
-#  featherStack Example Sets Credits
-#
-###
-
-Lorenz Wurmseher (Japanese Example Sets Error Correction)

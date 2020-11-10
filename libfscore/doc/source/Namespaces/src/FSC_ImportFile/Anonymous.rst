@@ -18,7 +18,14 @@ None.
 
 Functions
 ---------
-None.
+.. list-table::
+    :header-rows: 1
+
+    * - Name
+      - Description
+    * - :doc:`../../../Functions/src/FSC_ImportFile/FSC_IFGetValue`
+      - Read a file line for its value based on the identifier.
+
       
 Variables
 ---------

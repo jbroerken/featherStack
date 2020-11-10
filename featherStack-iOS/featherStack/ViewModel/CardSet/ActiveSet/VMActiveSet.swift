@@ -29,8 +29,7 @@ final class FSActiveSetViewModel: ObservableObject {
     // Types
     //************************************************************
     
-    // Change layout depending on mode
-    enum Mode {
+    enum FSMode {
         case Practice
         case Read
     }
@@ -42,7 +41,7 @@ final class FSActiveSetViewModel: ObservableObject {
     @Published private(set) var c_Card: FSCard? = nil // NextCard() notify
     
     private var c_Set: FSCardSet? = nil
-    private(set) var e_Mode: Mode? = nil
+    private(set) var e_Mode: FSMode? = nil
     
     var s_Title: String {
         return c_Set != nil ? c_Set!.s_Title : ""
@@ -80,7 +79,7 @@ final class FSActiveSetViewModel: ObservableObject {
      *  - Parameter e_Mode: The card set view mode to use.
      */
     
-    func Validate(c_Set: FSCardSet, e_Mode: Mode) -> Void {
+    func Validate(c_Set: FSCardSet, e_Mode: FSMode) -> Void {
         // Reset first
         Invalidate()
         

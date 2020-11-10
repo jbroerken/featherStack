@@ -23,7 +23,7 @@ Functions
       - Internal
     * - :doc:`Validate <../../../Functions/ViewModel/CardSet/ActiveSet/VMActiveSet/Validate>`
       - Internal
-    * - :doc:`Validate <../../../Functions/ViewModel/CardSet/ActiveSet/VMActiveSet/Invalidate>`
+    * - :doc:`Invalidate <../../../Functions/ViewModel/CardSet/ActiveSet/VMActiveSet/Invalidate>`
       - Internal
     * - :doc:`../../../Functions/ViewModel/CardSet/ActiveSet/VMActiveSet/NextCard`
       - Internal
@@ -36,7 +36,7 @@ Enumerations
 
     * - Name
       - Visibility
-    * - :doc:`../../../Enumerations/ViewModel/CardSet/ActiveSet/VMActiveSet/Mode`
+    * - :doc:`FSMode <../../../Enumerations/ViewModel/CardSet/ActiveSet/VMActiveSet/FSMode>`
       - Internal
 
 
@@ -73,7 +73,7 @@ Variables
       - The model to interact with.
       - Private
     * - e_Mode
-      - :doc:`../../../Enumerations/ViewModel/CardSet/ActiveSet/VMActiveSet/Mode`
+      - :doc:`FSMode <../../../Enumerations/ViewModel/CardSet/ActiveSet/VMActiveSet/FSMode>`
       - The type of set interaction chosen.
       - Private (Set)
     * - s_Title

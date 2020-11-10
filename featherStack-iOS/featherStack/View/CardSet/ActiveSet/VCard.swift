@@ -30,7 +30,7 @@ struct FSCardView: View {
     // Types
     //************************************************************
     
-    enum FSState {
+    private enum FSState {
         case Appear
         case Idle
         case Flipped

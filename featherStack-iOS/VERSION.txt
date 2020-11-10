@@ -13,3 +13,7 @@
 - Better file importing.
 - UI tweaks.
 - Added alerts for failed file loading and set importing.
+
+1.2:
+----
+- Improved card usage tutorial.

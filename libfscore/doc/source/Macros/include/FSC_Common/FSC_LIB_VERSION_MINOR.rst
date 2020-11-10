@@ -17,4 +17,4 @@ The defined macro is as follows:
 
 .. code-block:: c
 
-    #define FSC_LIB_VERSION_MINOR 1
+    #define FSC_LIB_VERSION_MINOR 2

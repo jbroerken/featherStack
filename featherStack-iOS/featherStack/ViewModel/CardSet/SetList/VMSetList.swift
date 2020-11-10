@@ -38,7 +38,7 @@ final class FSSetListViewModel: ObservableObject {
         
         fileprivate(set) var i_Entry: Int = 0
         fileprivate(set) var s_Title: String = ""
-        fileprivate(set) var e_Mode: FSActiveSetViewModel.Mode = .Practice
+        fileprivate(set) var e_Mode: FSActiveSetViewModel.FSMode = .Practice
     }
     
     //************************************************************
@@ -109,7 +109,7 @@ final class FSSetListViewModel: ObservableObject {
      *  - Parameter e_Mode: The set mode.
      */
     
-    func SelectEntry(i_Entry: Int, s_Title: String, e_Mode: FSActiveSetViewModel.Mode) -> Void {
+    func SelectEntry(i_Entry: Int, s_Title: String, e_Mode: FSActiveSetViewModel.FSMode) -> Void {
         c_Selection.i_Entry = i_Entry
         c_Selection.s_Title = s_Title
         c_Selection.e_Mode = e_Mode

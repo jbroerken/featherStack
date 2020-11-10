@@ -56,11 +56,11 @@ Variables
       - Description
       - Visbility
     * - c_Settings
-      - @EnvironmentObject :doc:`../../../ViewModel/Settings/VMSettings`
+      - @EnvironmentObject :doc:`../../../ViewModels/Settings/VMSettings`
       - The application settings.
       - Internal
     * - c_Model
-      - @StateObject :doc:`../../../ViewModel/CardSet/SetList/VMSetList`
+      - @StateObject :doc:`../../../ViewModels/CardSet/SetList/VMSetList`
       - The view model for the view.
       - Private
     * - s_AddURL

@@ -85,7 +85,7 @@ struct FSActiveSetView: View {
      *  - Parameter e_Mode: The card set view mode.
      */
     
-    init(c_Set: FSCardSet, s_Title: String, e_Mode: FSActiveSetViewModel.Mode) {
+    init(c_Set: FSCardSet, s_Title: String, e_Mode: FSActiveSetViewModel.FSMode) {
         c_Model.Validate(c_Set: c_Set, e_Mode: e_Mode)
         c_Model.NextCard() // Load the initial card
     }

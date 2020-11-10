@@ -44,7 +44,7 @@ Variables
       - Description
       - Visbility
     * - c_Settings
-      - :doc:`../../ViewModel/Settings/VMSettings`
+      - :doc:`../../ViewModels/Settings/VMSettings`
       - The settings view model.
       - Private
 

@@ -96,7 +96,7 @@ struct FSSetListView: View {
                             // Simple press leads directly to practice
                             self.SelectEntry(i_Entry: i_Entry,
                                              s_Title: c_Entry.s_Title,
-                                             e_Mode: FSActiveSetViewModel.Mode.Practice)
+                                             e_Mode: FSActiveSetViewModel.FSMode.Practice)
                         }) {
                             FSSetInfoView(c_Entry)
                                 .frame(minHeight: 70.0, maxHeight: 70.0) // Force same height even for multiline text
@@ -105,7 +105,7 @@ struct FSSetListView: View {
                             Button(action: {
                                 self.SelectEntry(i_Entry: i_Entry,
                                                  s_Title: c_Entry.s_Title,
-                                                 e_Mode: FSActiveSetViewModel.Mode.Practice)
+                                                 e_Mode: FSActiveSetViewModel.FSMode.Practice)
                             }) {
                                 Image(systemName: "play.fill")
                                 Text("@CMENU_PRACTICE", tableName: "SSetList")
@@ -114,7 +114,7 @@ struct FSSetListView: View {
                             Button(action: {
                                 self.SelectEntry(i_Entry: i_Entry,
                                                  s_Title: c_Entry.s_Title,
-                                                 e_Mode: FSActiveSetViewModel.Mode.Read)
+                                                 e_Mode: FSActiveSetViewModel.FSMode.Read)
                             }) {
                                 Image(systemName: "book.fill")
                                 Text("@CMENU_READ", tableName: "SSetList")
@@ -200,7 +200,7 @@ struct FSSetListView: View {
      *  - Parameter e_Mode: The mode to view the card set in.
      */
     
-    private func SelectEntry(i_Entry: Int, s_Title: String, e_Mode: FSActiveSetViewModel.Mode) -> Void {
+    private func SelectEntry(i_Entry: Int, s_Title: String, e_Mode: FSActiveSetViewModel.FSMode) -> Void {
         c_Model.SelectEntry(i_Entry: i_Entry,
                             s_Title: s_Title,
                             e_Mode: e_Mode)

@@ -1,9 +1,9 @@
 ******
 Models
 ******
-This collection of models contains everything used to store data related to the 
-application. The models include functions to guard against some types of 
-access.
+This collection of models contains everything used to store and manipulate data 
+related to the application. The models include functions to guard against some 
+types of access.
 
 Common
 ------
@@ -27,3 +27,10 @@ CardSet
   CardSet/MContext
   CardSet/MCardSet
   CardSet/MCard
+
+Import
+------
+.. toctree::
+  :maxdepth: 1
+
+  CardSet/Import/MImport

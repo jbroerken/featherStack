@@ -70,7 +70,7 @@ Variables
       - The exact search text matching setting.
       - Internal
     * - c_File
-      - :doc:`FSSettingsFile <../../Models/Settings/MSettingsFile`
+      - :doc:`FSSettingsFile <../../Models/Settings/MSettingsFile>`
       - The settings file to read from and write to.
       - Private
 
