@@ -33,10 +33,10 @@
 // Version
 //*************************************************************************************
 
-#define FSC_LIB_VERSION_STRING          "1.1.0"
+#define FSC_LIB_VERSION_STRING          "1.2.0"
 
 #define FSC_LIB_VERSION_MAJOR           1
-#define FSC_LIB_VERSION_MINOR           1
+#define FSC_LIB_VERSION_MINOR           2
 #define FSC_LIB_VERSION_PATCH           0
 
 //*************************************************************************************

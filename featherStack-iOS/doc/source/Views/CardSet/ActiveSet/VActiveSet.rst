@@ -52,7 +52,7 @@ Variables
       - Description
       - Visbility
     * - c_Model
-      - @ObservedObject :doc:`../../../ViewModel/CardSet/ActiveSet/VMActiveSet`
+      - @ObservedObject :doc:`../../../ViewModels/CardSet/ActiveSet/VMActiveSet`
       - The view model for the view.
       - Private
 

@@ -3,6 +3,12 @@ Import Files
 Import files are used by libfscore to know which files an directories to import 
 as a card set. The file only contains two lines with text and no other content. 
 
+Please note that the **SetFile** line has to be the first readable line, 
+followed by the **Directory** line as the next readable one. This is to make 
+sure that the set is imported correctly.
+
+You can comment lines by placing the '#' character at the start of it.
+
 Example File Structure
 ----------------------
 The following example file structure shows a standard import file.

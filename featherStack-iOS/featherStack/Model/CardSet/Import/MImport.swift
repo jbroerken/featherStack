@@ -75,6 +75,8 @@ class FSImport {
      *
      *  - Parameter s_Source: The path to the source content.
      *  - Parameter s_Destination: The path to the content destination.
+     *
+     *  - Throws: `FSError.CopyFailed`, `Error`.
      */
     
     private func CopyContent(s_Source: String, s_Destination: String) throws -> Void {
@@ -102,6 +104,8 @@ class FSImport {
      *
      *  - Parameter s_ZipURL: The url to the source zip file.
      *
+     *  - Throws: `FSCommon.FSError`, `Error`.
+     *
      *  - Returns: The path to the copied default zip location.
      */
     
@@ -125,6 +129,8 @@ class FSImport {
      *  Extract a zip file.
      *
      *  - Parameter s_ZipURL: The url to the set zip file.
+     *
+     *  - Throws: `Error`.
      *
      *  - Returns: The path to the extracted directory.
      */
@@ -170,6 +176,9 @@ class FSImport {
      *  Import a card set.
      *
      *  - Parameter s_ZipURL: The url to the set zip file.
+     *
+     *  - Throws: `FSError.NoImportFile`, `FSError.NoSetDirectory`, `FSError.AlreadyImported`,
+     *            `FSError.CopyFailed`, `FSError.NoSetFile`, `Error`.
      */
     
     func Import(p_Context: FSContext.CContext, s_ZipURL: URL) throws -> Void {

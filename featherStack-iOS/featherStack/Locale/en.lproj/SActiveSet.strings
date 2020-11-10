@@ -45,8 +45,14 @@
 "@ALERT_MESSAGE" = "The card failed to load.";
 "@ALERT_DISMISS" = "Ok";
 
+//************************************************************
+// VCardTutorial.swift
+//************************************************************
+
 // Usage Tutorial
-"@TUTORIAL_TITLE" = "Answerings cards";
-"@TUTORIAL_MESSAGE_R" = "Tap a card to show the answer. Then swipe the card to the right if you know the answer or to the left if not.";
-"@TUTORIAL_MESSAGE_L" = "Tap a card to show the answer. Then swipe the card to the left if you know the answer or to the right if not.";
-"@TUTORIAL_DISMISS" = "Got it";
+"@TUTORIAL_TITLE" = "Answerings Cards";
+"@TUTORIAL_SECTION_FLIP" = "1.";
+"@TUTORIAL_FLIP" = "Tap the card to flip it, revealing the answer.";
+"@TUTORIAL_SECTION_NEXT" = "2.";
+"@TUTORIAL_NEXT_R" = "With the card flipped, swipe right if you were correct. Swipe left if not.";
+"@TUTORIAL_NEXT_L" = "With the card flipped, swipe left if you were correct. Swipe right if not.";

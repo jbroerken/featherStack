@@ -20,21 +20,28 @@ Functions
       - Visibility
     * - :doc:`init <../../../Functions/View/CardSet/ActiveSet/VCard/init>`
       - Internal
-    * - :doc:`../../../Functions/View/CardSet/CardSet/ActiveSet/CardAppear`
+    * - :doc:`../../../Functions/View/CardSet/ActiveSet/VCard/CardAppear`
       - Private
-    * - :doc:`../../../Functions/View/CardSet/CardSet/ActiveSet/FlipCard`
+    * - :doc:`../../../Functions/View/CardSet/ActiveSet/VCard/FlipCard`
       - Private
-    * - :doc:`../../../Functions/View/CardSet/CardSet/ActiveSet/CardDisappear`
+    * - :doc:`../../../Functions/View/CardSet/ActiveSet/VCard/CardDisappear`
       - Private
-    * - :doc:`../../../Functions/View/CardSet/CardSet/ActiveSet/ShowTutorial`
+    * - :doc:`../../../Functions/View/CardSet/ActiveSet/VCard/ShowTutorial`
       - Private
-    * - :doc:`../../../Functions/View/CardSet/CardSet/ActiveSet/GetFlipped`
+    * - :doc:`../../../Functions/View/CardSet/ActiveSet/VCard/GetFlipped`
       - Private
 
 
 Enumerations
 ------------
-None.
+.. list-table::
+    :header-rows: 1
+
+    * - Name
+      - Visibility
+    * - :doc:`FSState <../../../Enumerations/View/CardSet/ActiveSet/VCard/FSState>`
+      - Private
+      
 
 Nested
 ------
@@ -61,15 +68,15 @@ Variables
       - Description
       - Visbility
     * - c_Settings
-      - @EnvironmentObject :doc:`../../../ViewModel/Settings/VMSettings`
+      - @EnvironmentObject :doc:`../../../ViewModels/Settings/VMSettings`
       - The application settings.
       - Internal
     * - c_Model
-      - @StateObject :doc:`../../../ViewModel/CardSet/ActiveSet/VMCard`
+      - @StateObject :doc:`../../../ViewModels/CardSet/ActiveSet/VMCard`
       - The view model for the view.
       - Private
     * - e_State
-      - @State :doc:`../../../Enumerations/View/CardSet/ActiveSet/VCard/FSState`
+      - @State :doc:`FSState <../../../Enumerations/View/CardSet/ActiveSet/VCard/FSState>`
       - The current card display state.
       - Internal
     * - c_Offset

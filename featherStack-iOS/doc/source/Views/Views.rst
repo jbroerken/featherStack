@@ -40,6 +40,7 @@ ActiveSet
   :maxdepth: 1
 
   CardSet/ActiveSet/VSetCardsInfo
+  CardSet/ActiveSet/VCardTutorial
   CardSet/ActiveSet/VCard
   CardSet/ActiveSet/VActiveSet
 

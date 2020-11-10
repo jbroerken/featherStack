@@ -65,6 +65,7 @@ Internal Functions
   src/FSC_ContextData/FSC_Entry/~FSC_Entry_t
   src/FSC_CardData/FSC_CDUsable
   src/FSC_CardSetData/FSC_CSUsable
+  src/FSC_ImportFile/FSC_IFGetValue
   src/FSC_ImportFile/FSC_IFUsable
   src/FSC_Context/FSC_COGetEntry
   src/CardSet/FSC_CSStorage/FSC_CSStorage/FSC_CSStorage

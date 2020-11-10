@@ -44,7 +44,7 @@ Variables
       - Description
       - Visbility
     * - c_Settings
-      - @EnvironmentObject :doc:`../../ViewModel/Settings/VMSettings`
+      - @EnvironmentObject :doc:`../../ViewModels/Settings/VMSettings`
       - The application settings.
       - Internal
 

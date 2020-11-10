@@ -1,0 +1,13 @@
+###
+#
+#  featherStack Credits
+#
+###
+
+featherStack-iOS:
+-----------------
+Roy Marmelstein for the Zip framework.
+
+example_sets:
+-------------
+Lorenz Wurmseher (Japanese Example Sets Error Correction)

@@ -22,4 +22,5 @@ the simple building process as well as the general flow of the app.
    Models/Models
    Locales/Locales
    Enumerations/Enumerations
+   Types/Types
    Functions/Functions

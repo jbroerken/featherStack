@@ -9,8 +9,8 @@ View Functions
 --------------
 TODO
 
-ViewModel Functions
--------------------
+View Model Functions
+--------------------
 TODO
 
 Model Functions

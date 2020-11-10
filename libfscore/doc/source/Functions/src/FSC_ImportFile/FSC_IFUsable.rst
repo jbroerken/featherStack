@@ -1,6 +1,6 @@
 FSC_IFUsable
 ============
-The FSC_IFUsable function is used check the validity of a given import file.
+The FSC_IFUsable function is used to check the validity of a given import file.
 
 Header
 ------

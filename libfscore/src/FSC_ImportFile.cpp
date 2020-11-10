@@ -58,6 +58,30 @@ namespace
         "Directory=",
         "File="
     };
+    
+    
+    /**
+     *  Get a value from a line if a given identifier is found.
+     *
+     *  \param s_Line The file line to check.
+     *  \param e_Identifier The identifier required.
+     *
+     *  \return The value string.
+     */
+    
+    inline std::string FSC_IFGetValue(std::string const& s_Line, Identifier e_Identifier)
+    {
+        size_t us_Length;
+        
+        if (s_Line.length() <= (us_Length = std::strlen(p_Identifier[e_Identifier])) ||
+            s_Line.substr(0, us_Length).compare(p_Identifier[e_Identifier]) != 0)
+        {
+            throw FSC_Exception("FSC_ImportFile (anonymous): No matching identifier!", "FSC_ImportFile", __LINE__);
+        }
+        
+        // No try needed, length is checked
+        return s_Line.substr(us_Length);
+    }
 }
 
 
@@ -71,8 +95,7 @@ FSC_ImportFile_t::FSC_ImportFile_t(std::string const& s_FilePath) : s_SetFile(""
     std::ifstream f_File(s_FilePath);
     std::string s_Line;
     size_t us_Line = 0;
-    size_t us_Length;
-    size_t us_IdentifierStart = SET_FILE;
+    Identifier e_Identifier = SET_FILE;
     
     if (!f_File.is_open())
     {
@@ -90,35 +113,30 @@ FSC_ImportFile_t::FSC_ImportFile_t(std::string const& s_FilePath) : s_SetFile(""
             continue;
         }
         
-        // Check all identifiers
-        for (size_t i = us_IdentifierStart; i < IDENTIFIER_COUNT; ++i)
+        // Get by identifier
+        // NOTE: We require the identifier order to match! Checking them in order
+        //       is an easy way to make sure only 1 set file and directory are given.
+        try
         {
-            try
+            if (e_Identifier == FILE_PATH)
             {
-                if (s_Line.length() > (us_Length = std::strlen(p_Identifier[i])) &&
-                    s_Line.substr(0, us_Length).compare(p_Identifier[i]) == 0)
-                {
-                    switch (i)
-                    {
-                        case SET_FILE:
-                            s_SetFile = s_Line.substr(us_Length);
-                            us_IdentifierStart = (s_DirName.length() > 0 ? FILE_PATH : SET_FILE); // SetFile already > 0
-                            break;
-                        case DIR_NAME:
-                            s_DirName = s_Line.substr(us_Length);
-                            us_IdentifierStart = (s_SetFile.length() > 0 ? FILE_PATH : SET_FILE); // DirName already > 0
-                            break;
-                        case FILE_PATH:
-                            v_FilePath.emplace_back(s_Line.substr(us_Length));
-                            break;
-                    }
-                }
+                v_FilePath.emplace_back(FSC_IFGetValue(s_Line, FILE_PATH));
             }
-            catch (std::exception& e)
+            else if (e_Identifier == DIR_NAME)
             {
-                f_File.close();
-                throw;
+                s_DirName = FSC_IFGetValue(s_Line, DIR_NAME);
+                e_Identifier = FILE_PATH;
             }
+            else if (e_Identifier == SET_FILE) // if not really needed, just more explicit
+            {
+                s_SetFile = FSC_IFGetValue(s_Line, SET_FILE);
+                e_Identifier = DIR_NAME;
+            }
+        }
+        catch (...)
+        {
+            f_File.close();
+            throw;
         }
     }
     

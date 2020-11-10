@@ -58,7 +58,7 @@ final class FSContext: FSImport {
          *  - Parameter s_IconPath: The path to the set icon file.
          */
         
-        init(i_CoreIndex: Int, s_Title: String, s_Subtitle: String, s_IconPath: String) {
+        fileprivate init(i_CoreIndex: Int, s_Title: String, s_Subtitle: String, s_IconPath: String) {
             self.i_CoreIndex = i_CoreIndex
             self.s_Title = s_Title
             self.s_Subtitle = s_Subtitle
@@ -70,7 +70,6 @@ final class FSContext: FSImport {
         case NoContext
         case NoSet
         case CreateFailed
-        case InvalidSet
         case ImportFailed
         
         var s_String: String {
@@ -78,7 +77,6 @@ final class FSContext: FSImport {
                 case .NoContext: return "No FSCore context to use"
                 case .CreateFailed: return "Failed to create a card set"
                 case .NoSet: return "No set found"
-                case .InvalidSet: return "Invalid set data"
                 case .ImportFailed: return "Failed to import new set"
             }
         }
@@ -135,7 +133,7 @@ final class FSContext: FSImport {
     /**
      *  Reload the context.
      *
-     *  - Throws: `FSError.NoContext`, `FSError.InvalidSet`.
+     *  - Throws: `FSError.NoContext`.
      */
     
     func Reload() throws -> Void {

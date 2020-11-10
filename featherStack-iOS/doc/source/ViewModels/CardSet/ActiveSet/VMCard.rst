@@ -22,7 +22,7 @@ Functions
       - Internal
     * - :doc:`Validate <../../../Functions/ViewModel/CardSet/ActiveSet/VMCard/Validate>`
       - Internal
-    * - :doc:`Validate <../../../Functions/ViewModel/CardSet/ActiveSet/VMCard/Invalidate>`
+    * - :doc:`Invalidate <../../../Functions/ViewModel/CardSet/ActiveSet/VMCard/Invalidate>`
       - Internal
 
 
