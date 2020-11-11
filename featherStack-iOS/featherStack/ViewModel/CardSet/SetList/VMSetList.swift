@@ -45,11 +45,11 @@ final class FSSetListViewModel: ObservableObject {
     // Variables
     //************************************************************
     
-    @Published private var b_Changed = false // Toggle
-    @Published var b_ImportFailed = false
+    @Published private var b_Changed: Bool = false // Toggle
+    @Published var b_ImportFailed: Bool = false
     
-    private let c_Context = FSContext()
-    private(set) var c_Selection = FSSelection()
+    private let c_Context: FSContext = FSContext()
+    private(set) var c_Selection: FSSelection = FSSelection()
     
     var i_EntryCount: Int {
         return c_Context.l_SetEntry.count

@@ -18,21 +18,17 @@ Functions
 
     * - Function
       - Visibility
-    * - :doc:`init <../../../Functions/Model/CardSet/Import/MImport/init>`
-      - Internal
-    * - :doc:`deinit <../../../Functions/Model/CardSet/Import/MImport/deinit>`
-      - Internal
-    * - :doc:`../../../Functions/Model/CardSet/Import/MImport/RemoveContent`
+    * - :doc:`RemoveContent <../../../Functions/Model/CardSet/Import/MImport/RemoveContent>`
       - Private
-    * - :doc:`../../../Functions/Model/CardSet/Import/MImport/CopyContent`
+    * - :doc:`CopyContent <../../../Functions/Model/CardSet/Import/MImport/CopyContent>`
       - Private
-    * - :doc:`../../../Functions/Model/CardSet/Import/MImport/CopyZip`
+    * - :doc:`CopyZip <../../../Functions/Model/CardSet/Import/MImport/CopyZip>`
       - Private
-    * - :doc:`../../../Functions/Model/CardSet/Import/MImport/ExtractZip`
+    * - :doc:`ExtractZip <../../../Functions/Model/CardSet/Import/MImport/ExtractZip>`
       - Private
-    * - :doc:`../../../Functions/Model/CardSet/Import/MImport/ImportFailed`
+    * - :doc:`ImportFailed <../../../Functions/Model/CardSet/Import/MImport/ImportFailed>`
       - Private
-    * - :doc:`../../../Functions/Model/CardSet/Import/MImport/RemoveContent`
+    * - :doc:`Import <../../../Functions/Model/CardSet/Import/MImport/Import>`
       - Internal
 
 

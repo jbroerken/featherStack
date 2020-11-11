@@ -30,8 +30,8 @@ struct FSHomeView: View {
     // Variables
     //************************************************************
     
-    @State private var i_Tab = 0;
-    @State private var s_AddURL = URL(fileURLWithPath: "") // Set and SetListView Button
+    @State private var i_Tab: Int = 0;
+    @State private var s_AddURL: URL = URL(fileURLWithPath: "") // Set and SetListView Button
     
     //************************************************************
     // Main Body

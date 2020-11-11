@@ -98,7 +98,7 @@ final class FSContext: FSImport {
      *  Initialize the context.
      */
     
-    override init() { // FSImport has no initializer, override basic
+    override init() { // FSImport has no special initializer, override basic
         // Check text file and create if missing, fscore requires the files
         // to exist. Failing to create a file will cause reload() to fail
         do {
@@ -230,23 +230,17 @@ final class FSContext: FSImport {
         }
         
         // Add to available
-        do {
-            let s_Title = try FSCommon.UTF8ToString(FSC_COGetSetTitle(p_Context!, i_CoreIndex))
-            let s_Subtitle = try FSCommon.UTF8ToString(FSC_COGetSetSubtitle(p_Context!, i_CoreIndex))
-            let s_IconPath = try FSCommon.UTF8ToString(FSC_COGetSetIconPath(p_Context!, i_CoreIndex))
-            
-            let c_Set = FSEntry(i_CoreIndex: i_CoreIndex,
-                                s_Title: s_Title,
-                                s_Subtitle: s_Subtitle,
-                                s_IconPath: s_IconPath)
-            
-            l_SetEntry.insert(c_Set, at: 0)
-            
-        } catch let e as FSCommon.FSError {
-            FSCommon.Log(e.s_String)
-        } catch let e {
-            FSCommon.Log(e.localizedDescription)
-        }
+        // NOTE: We check the index for validity, so we force unwrap
+        let s_Title = String(cString: FSC_COGetSetTitle(p_Context!, i_CoreIndex)!)
+        let s_Subtitle = String(cString: FSC_COGetSetSubtitle(p_Context!, i_CoreIndex)!)
+        let s_IconPath = String(cString: FSC_COGetSetIconPath(p_Context!, i_CoreIndex)!)
+        
+        let c_Set = FSEntry(i_CoreIndex: i_CoreIndex,
+                            s_Title: s_Title,
+                            s_Subtitle: s_Subtitle,
+                            s_IconPath: s_IconPath)
+        
+        l_SetEntry.insert(c_Set, at: 0)
     }
     
     /**
@@ -295,28 +289,26 @@ final class FSContext: FSImport {
         // Get fscore index, lists are stored in reverse (newest on top)
         let i_CoreIndex = l_SetEntry[i_Entry].i_CoreIndex
         
-        do {
-            let s_Path = try FSCommon.UTF8ToString(FSC_COGetSetDirPath(p_Current, i_CoreIndex))
-            
-            if (FSC_CORemoveSet(p_Current, i_CoreIndex) < 0) {
-                FSCommon.Log(String(cString: FSC_EGetErrorString()))
-                return
-            }
-            
-            // We need to remove the entry and correct the core indexes
-            l_SetEntry.remove(at: i_Entry)
-            
-            // NOTE: Newest (highest core index) is stored first, so we
-            //       correct everything until the element before the
-            //       removed one
-            for i in 0 ..< i_Entry {
-                l_SetEntry[i].i_CoreIndex -= 1
-            }
-            
-            FSCommon.RemoveContent(s_Path)
-            
-        } catch let e as FSCommon.FSError {
-            FSCommon.Log(e.s_String)
+        // We need to create the path here, further down
+        // set info gets removed
+        // NOTE: We check the index for validity, so we force unwrap
+        let s_Path = String(cString: FSC_COGetSetDirPath(p_Current, i_CoreIndex)!)
+        
+        if (FSC_CORemoveSet(p_Current, i_CoreIndex) < 0) {
+            FSCommon.Log(String(cString: FSC_EGetErrorString()))
+            return
         }
+        
+        // We need to remove the entry and correct the core indexes
+        l_SetEntry.remove(at: i_Entry)
+        
+        // NOTE: Newest (highest core index) is stored first, so we
+        //       correct everything until the element before the
+        //       removed one
+        for i in 0 ..< i_Entry {
+            l_SetEntry[i].i_CoreIndex -= 1
+        }
+        
+        FSCommon.RemoveContent(s_Path)
     }
 }

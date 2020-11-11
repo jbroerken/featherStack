@@ -18,7 +18,7 @@ Functions
 
     * - Function
       - Visibility
-    * - :doc:`deinit <../../../Functions/ViewModel/CardSet/ActiveSet/VMCard/init>`
+    * - :doc:`deinit <../../../Functions/ViewModel/CardSet/ActiveSet/VMCard/deinit>`
       - Internal
     * - :doc:`Validate <../../../Functions/ViewModel/CardSet/ActiveSet/VMCard/Validate>`
       - Internal

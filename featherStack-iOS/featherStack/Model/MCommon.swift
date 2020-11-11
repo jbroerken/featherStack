@@ -102,46 +102,6 @@ public final class FSCommon {
     }
     
     /**
-     *  Move a file or directory at a given path to a destination.
-     *
-     *  - Parameter s_SourcePath: The path to the file or directory.
-     *  - Parameter s_DestinationPath: The path to the destination location.
-     */
-    
-    public static func MoveContent(s_SourcePath: String, s_DestinationPath: String) throws -> Void {
-        if (FileManager.default.fileExists(atPath: s_SourcePath)) {
-            do {
-                try FileManager.default.moveItem(atPath: s_SourcePath, toPath: s_DestinationPath)
-            } catch {
-                FSCommon.Log(error.localizedDescription)
-                throw FSError.Move
-            }
-        } else {
-            throw FSError.NoFile
-        }
-    }
-    
-    /**
-     *  Copy a file or directory at a given path to a destination.
-     *
-     *  - Parameter s_SourcePath: The path to the file or directory.
-     *  - Parameter s_DestinationPath: The path to the destination location.
-     */
-    
-    public static func CopyContent(s_SourcePath: String, s_DestinationPath: String) throws -> Void {
-        if (FileManager.default.fileExists(atPath: s_SourcePath)) {
-            do {
-                try FileManager.default.copyItem(atPath: s_SourcePath, toPath: s_DestinationPath)
-            } catch {
-                FSCommon.Log(error.localizedDescription)
-                throw FSError.Copy
-            }
-        } else {
-            throw FSError.NoFile
-        }
-    }
-    
-    /**
      *  Get the file path to the documents folder.
      *
      *  - Parameter s_Append: The string to appent to the path if required.
@@ -172,33 +132,5 @@ public final class FSCommon {
         }
         
         return s_Path
-    }
-    
-    //************************************************************
-    // C <-> Swift String
-    //************************************************************
-    
-    /**
-     *  Convert a UTF8 char* string to String.
-     *
-     *  - Parameter p_String: The string to convert.
-     *
-     *  - Throws: `FSError.InvalidPtr`, `FSError.Encoding`.
-     *
-     *  - Returns: A swift String.
-     */
-    
-    public static func UTF8ToString(_ p_String: UnsafePointer<CChar>?) throws -> String {
-        guard let p_Ptr = p_String else {
-            throw FSError.InvalidPtr
-        }
-        
-        if let s_Result = NSString(bytes: p_Ptr,
-                                   length: strlen(p_Ptr) * MemoryLayout<CChar>.size,
-                                   encoding: String.Encoding.utf8.rawValue) as String? {
-                return s_Result
-        } else {
-            throw FSError.Encoding
-        }
     }
 }

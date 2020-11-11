@@ -43,7 +43,7 @@ struct FSCardView: View {
     
     @EnvironmentObject var c_Settings: FSSettingsViewModel
     
-    @ObservedObject private var c_Model = FSCardViewModel()
+    @ObservedObject private var c_Model: FSCardViewModel = FSCardViewModel()
     
     // NOTE: These need to be here, swiftui goes crazy otherwise
     @State private var e_State: FSState = .Appear

@@ -20,17 +20,11 @@ Functions
       - Visibility
     * - :doc:`init <../Functions/Model/MCommon/init>`
       - Private
-    * - :doc:`../Functions/Model/MCommon/Log`
+    * - :doc:`Log <../Functions/Model/MCommon/Log>`
       - Public
-    * - :doc:`../Functions/Model/MCommon/FileExists`
+    * - :doc:`FileExists <../Functions/Model/MCommon/FileExists>`
       - Public
-    * - :doc:`../Functions/Model/MCommon/RemoveContent`
-      - Public
-    * - :doc:`../Functions/Model/MCommon/CopyContent`
-      - Public
-    * - :doc:`../Functions/Model/MCommon/GetDocumentsPath`
-      - Public
-    * - :doc:`../Functions/Model/MCommon/UTF8ToString`
+    * - :doc:`GetDocumentsPath <../Functions/Model/MCommon/GetDocumentsPath>`
       - Public
 
 

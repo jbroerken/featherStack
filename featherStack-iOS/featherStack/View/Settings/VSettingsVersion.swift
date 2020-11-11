@@ -30,8 +30,8 @@ struct FSSettingsVersionView: View {
     // Variables
     //************************************************************
     
-    @State var s_AppVersion = UIApplication.appVersion
-    @State var s_AppBuild = UIApplication.appBuild
+    @State var s_AppVersion: String? = UIApplication.appVersion
+    @State var s_AppBuild: String? = UIApplication.appBuild
     
     //************************************************************
     // Main Body
