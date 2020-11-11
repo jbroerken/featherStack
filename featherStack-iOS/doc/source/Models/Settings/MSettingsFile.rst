@@ -20,13 +20,13 @@ Functions
       - Visibility
     * - :doc:`init <../../Functions/Model/Settings/MSettingsFile/init>`
       - Internal
-    * - :doc:`../../Functions/Model/Settings/MSettingsFile/Read`
+    * - :doc:`Read <../../Functions/Model/Settings/MSettingsFile/Read>`
       - Internal
-    * - :doc:`../../Functions/Model/Settings/MSettingsFile/Write`
+    * - :doc:`Write <../../Functions/Model/Settings/MSettingsFile/Write>`
       - Internal
-    * - :doc:`../../Functions/Model/Settings/MSettingsFile/GetValue`
+    * - :doc:`GetValue <../../Functions/Model/Settings/MSettingsFile/GetValue>`
       - Internal
-    * - :doc:`../../Functions/Model/Settings/MSettingsFile/SetValue`
+    * - :doc:`SetValue <../../Functions/Model/Settings/MSettingsFile/SetValue>`
       - Internal
 
 

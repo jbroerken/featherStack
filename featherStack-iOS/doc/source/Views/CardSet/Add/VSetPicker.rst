@@ -20,8 +20,12 @@ Functions
       - Visibility
     * - :doc:`init <../../../Functions/View/CardSet/Add/VSetPicker/init>`
       - Internal
-    * - :doc:`../../../Functions/View/CardSet/Add/VSetPicker/ImportSet`
+    * - :doc:`ImportSet <../../../Functions/View/CardSet/Add/VSetPicker/ImportSet>`
       - Fileprivate
+    * - :doc:`documentPicker <../../../Functions/View/CardSet/Add/VSetPicker/documentPicker>`
+      - Internal
+    * - :doc:`documentPickerWasCancelled <../../../Functions/View/CardSet/Add/VSetPicker/documentPickerWasCancelled>`
+      - Internal
 
 
 Enumerations

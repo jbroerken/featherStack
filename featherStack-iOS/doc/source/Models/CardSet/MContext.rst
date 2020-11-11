@@ -22,15 +22,15 @@ Functions
       - Internal
     * - :doc:`deinit <../../Functions/Model/CardSet/MContext/deinit>`
       - Internal
-    * - :doc:`../../Functions/Model/CardSet/MContext/CreateSet`
+    * - :doc:`CreateSet <../../Functions/Model/CardSet/MContext/CreateSet>`
       - Internal
-    * - :doc:`../../Functions/Model/CardSet/MContext/DestroySet`
+    * - :doc:`DestroySet <../../Functions/Model/CardSet/MContext/DestroySet>`
       - Internal
-    * - :doc:`../../Functions/Model/CardSet/MContext/AddEntry`
+    * - :doc:`AddEntry <../../Functions/Model/CardSet/MContext/AddEntry>`
       - Private
-    * - :doc:`../../Functions/Model/CardSet/MContext/AddSet`
+    * - :doc:`AddSet <../../Functions/Model/CardSet/MContext/AddSet>`
       - Internal
-    * - :doc:`../../Functions/Model/CardSet/MContext/RemoveSet`
+    * - :doc:`RemoveSet <../../Functions/Model/CardSet/MContext/RemoveSet>`
       - Internal
 
 

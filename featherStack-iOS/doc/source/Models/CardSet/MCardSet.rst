@@ -22,9 +22,9 @@ Functions
       - Internal
     * - :doc:`deinit <../../Functions/Model/CardSet/MCardSet/deinit>`
       - Internal
-    * - :doc:`../../Functions/Model/CardSet/MCardSet/LoadCard`
+    * - :doc:`LoadCard <../../Functions/Model/CardSet/MCardSet/LoadCard>`
       - Internal
-    * - :doc:`../../Functions/Model/CardSet/MCardSet/DestroyCard`
+    * - :doc:`DestroyCard <../../Functions/Model/CardSet/MCardSet/DestroyCard>`
       - Internal
 
 

@@ -31,7 +31,7 @@ final class FSCardViewModel: ObservableObject {
     //************************************************************
     
     @Published private(set) var b_Loaded: Bool = false
-    @Published var b_LoadFailed = false
+    @Published var b_LoadFailed: Bool = false
     
     private var c_Card: FSCard? = nil
     private var s_DirPath: String = ""

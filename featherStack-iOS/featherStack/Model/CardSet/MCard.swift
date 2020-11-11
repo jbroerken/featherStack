@@ -32,7 +32,7 @@ final class FSCard {
     private let c_Set: FSCardSet
     private var p_Card: FSCardSet.CCard? = nil
     
-    var b_Completed = false
+    var b_Completed: Bool = false
     var b_Loaded: Bool {
         return p_Card != nil
     }

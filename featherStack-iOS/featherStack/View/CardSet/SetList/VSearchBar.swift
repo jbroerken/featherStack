@@ -32,7 +32,7 @@ struct FSSearchBarView: View {
     
     @Binding var s_Text: String
     
-    @State private var b_Editing = false
+    @State private var b_Editing: Bool = false
     
     //************************************************************
     // Main Body

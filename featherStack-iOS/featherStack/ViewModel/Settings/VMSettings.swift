@@ -61,7 +61,7 @@ final class FSSettingsViewModel: ObservableObject {
     }
     
     // File
-    private var c_File = FSSettingsFile()
+    private var c_File: FSSettingsFile = FSSettingsFile()
     
     //************************************************************
     // Init

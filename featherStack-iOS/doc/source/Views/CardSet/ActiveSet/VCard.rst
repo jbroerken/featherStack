@@ -20,15 +20,15 @@ Functions
       - Visibility
     * - :doc:`init <../../../Functions/View/CardSet/ActiveSet/VCard/init>`
       - Internal
-    * - :doc:`../../../Functions/View/CardSet/ActiveSet/VCard/CardAppear`
+    * - :doc:`CardAppear <../../../Functions/View/CardSet/ActiveSet/VCard/CardAppear>`
       - Private
-    * - :doc:`../../../Functions/View/CardSet/ActiveSet/VCard/FlipCard`
+    * - :doc:`FlipCard <../../../Functions/View/CardSet/ActiveSet/VCard/FlipCard>`
       - Private
-    * - :doc:`../../../Functions/View/CardSet/ActiveSet/VCard/CardDisappear`
+    * - :doc:`CardDisappear <../../../Functions/View/CardSet/ActiveSet/VCard/CardDisappear>`
       - Private
-    * - :doc:`../../../Functions/View/CardSet/ActiveSet/VCard/ShowTutorial`
+    * - :doc:`ShowTutorial <../../../Functions/View/CardSet/ActiveSet/VCard/ShowTutorial>`
       - Private
-    * - :doc:`../../../Functions/View/CardSet/ActiveSet/VCard/GetFlipped`
+    * - :doc:`GetFlipped <../../../Functions/View/CardSet/ActiveSet/VCard/GetFlipped>`
       - Private
 
 

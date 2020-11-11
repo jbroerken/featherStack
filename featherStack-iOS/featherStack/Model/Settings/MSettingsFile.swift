@@ -70,7 +70,7 @@ final class FSSettingsFile {
     // Variables
     //************************************************************
     
-    private(set) var l_Setting = [Any]()
+    private(set) var l_Setting: [Any] = [Any]()
     
     //************************************************************
     // Init

@@ -32,7 +32,7 @@ struct FSSetListView: View {
     
     @EnvironmentObject var c_Settings: FSSettingsViewModel
     
-    @StateObject private var c_Model = FSSetListViewModel()
+    @StateObject private var c_Model: FSSetListViewModel = FSSetListViewModel()
     
     @Binding var s_AddURL: URL
     

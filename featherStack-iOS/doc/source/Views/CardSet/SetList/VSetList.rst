@@ -21,9 +21,9 @@ Functions
       - Visibility
     * - :doc:`init <../../../Functions/View/CardSet/SetList/VSetList/init>`
       - Internal
-    * - :doc:`../../../Functions/View/CardSet/SetList/VSetList/SelectEntry`
+    * - :doc:`SelectEntry <../../../Functions/View/CardSet/SetList/VSetList/SelectEntry>`
       - Private
-    * - :doc:`../../../Functions/View/CardSet/SetList/VSetList/ResetSelection`
+    * - :doc:`ResetSelection <../../../Functions/View/CardSet/SetList/VSetList/ResetSelection>`
       - Private
 
 
