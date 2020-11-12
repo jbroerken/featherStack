@@ -1,8 +1,8 @@
 //
 //  VCardTutorial.swift
 //
-//  Copyright (C) 2020 Jens Broerken
-//  <jens.broerken@hs-augsburg.de>
+//  This file is part of the featherStack app project.
+//  See the AUTHORS file for Copyright information.
 //
 //  This program is free software; you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
@@ -37,63 +37,68 @@ struct FSCardTutorialView: View {
     //************************************************************
     
     var body: some View {
-        VStack(alignment: .center) {
-            // Title
-            Text("@TUTORIAL_TITLE", tableName: "SActiveSet")
-                .font(.title)
-                .bold()
-                .multilineTextAlignment(.center)
-                .padding(.top)
-            
-            Divider()
-                .padding([.leading, .trailing, .bottom])
-            
-            // Section 1 (Card Flip)
-            Text("@TUTORIAL_SECTION_FLIP", tableName: "SActiveSet")
-                .font(.title2)
-                .bold()
-                .multilineTextAlignment(.center)
-                .padding()
-            
-            Image("CardTutorialFlip")
-                .renderingMode(.original)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .shadow(color: Color.black.opacity(0.2), radius: 4)
-            
-            Text("@TUTORIAL_FLIP", tableName: "SActiveSet")
-                .multilineTextAlignment(.center)
-                .padding()
-            
-            // Section 2 (Next Card)
-            Text("@TUTORIAL_SECTION_NEXT", tableName: "SActiveSet")
-                .font(.title2)
-                .bold()
-                .multilineTextAlignment(.center)
-                .padding()
-            
-            // Content has to change depending on setting
-            if (c_Settings.b_CDSwipeRightCorrect) {
-                Image("CardTutorialSwipeRight")
-                    .renderingMode(.original)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .shadow(color: Color.black.opacity(0.2), radius: 4)
+        ScrollView(showsIndicators: false) {
+            VStack(alignment: .center) {
+                // Title
+                Text("@TUTORIAL_TITLE", tableName: "SActiveSet")
+                    .font(.title)
+                    .bold()
+                    .multilineTextAlignment(.center)
+                    .padding(.top)
                 
-                Text("@TUTORIAL_NEXT_R", tableName: "SActiveSet")
+                Divider()
+                    .padding([.leading, .trailing, .bottom])
+                
+                // Section 1 (Card Flip)
+                Text("@TUTORIAL_SECTION_FLIP", tableName: "SActiveSet")
+                    .font(.title2)
+                    .bold()
                     .multilineTextAlignment(.center)
                     .padding()
                 
-            } else {
-                Image("CardTutorialSwipeLeft")
+                Image("CardTutorialFlip")
                     .renderingMode(.original)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .frame(maxWidth: UIScreen.main.bounds.width * 0.35)
                     .shadow(color: Color.black.opacity(0.2), radius: 4)
                 
-                Text("@TUTORIAL_NEXT_L", tableName: "SActiveSet")
+                Text("@TUTORIAL_FLIP", tableName: "SActiveSet")
                     .multilineTextAlignment(.center)
                     .padding()
+                
+                // Section 2 (Next Card)
+                Text("@TUTORIAL_SECTION_NEXT", tableName: "SActiveSet")
+                    .font(.title2)
+                    .bold()
+                    .multilineTextAlignment(.center)
+                    .padding()
+                
+                // Content has to change depending on setting
+                if (c_Settings.b_CDSwipeRightCorrect) {
+                    Image("CardTutorialSwipeRight")
+                        .renderingMode(.original)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(maxWidth: UIScreen.main.bounds.width * 0.5)
+                        .shadow(color: Color.black.opacity(0.2), radius: 4)
+                    
+                    Text("@TUTORIAL_NEXT_R", tableName: "SActiveSet")
+                        .multilineTextAlignment(.center)
+                        .padding()
+                    
+                } else {
+                    Image("CardTutorialSwipeLeft")
+                        .renderingMode(.original)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(maxWidth: UIScreen.main.bounds.width * 0.9)
+                        .shadow(color: Color.black.opacity(0.2), radius: 4)
+                    
+                    Text("@TUTORIAL_NEXT_L", tableName: "SActiveSet")
+                        .multilineTextAlignment(.center)
+                        .padding()
+                }
             }
         }
         .background(LinearGradient(gradient: Gradient(colors: [Color("CardGradientColorTop"),

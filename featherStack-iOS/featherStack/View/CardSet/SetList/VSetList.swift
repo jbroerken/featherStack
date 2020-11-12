@@ -1,8 +1,8 @@
 //
 //  VSetList.swift
 //
-//  Copyright (C) 2020 Jens Broerken
-//  <jens.broerken@hs-augsburg.de>
+//  This file is part of the featherStack app project.
+//  See the AUTHORS file for Copyright information.
 //
 //  This program is free software; you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
@@ -96,7 +96,7 @@ struct FSSetListView: View {
                             // Simple press leads directly to practice
                             self.SelectEntry(i_Entry: i_Entry,
                                              s_Title: c_Entry.s_Title,
-                                             e_Mode: FSActiveSetViewModel.FSMode.Practice)
+                                             e_Mode: FSActiveSetViewModel.FSMode.Standard)
                         }) {
                             FSSetInfoView(c_Entry)
                                 .frame(minHeight: 70.0, maxHeight: 70.0) // Force same height even for multiline text
@@ -105,7 +105,7 @@ struct FSSetListView: View {
                             Button(action: {
                                 self.SelectEntry(i_Entry: i_Entry,
                                                  s_Title: c_Entry.s_Title,
-                                                 e_Mode: FSActiveSetViewModel.FSMode.Practice)
+                                                 e_Mode: FSActiveSetViewModel.FSMode.Standard)
                             }) {
                                 Image(systemName: "play.fill")
                                 Text("@CMENU_PRACTICE", tableName: "SSetList")
@@ -114,7 +114,7 @@ struct FSSetListView: View {
                             Button(action: {
                                 self.SelectEntry(i_Entry: i_Entry,
                                                  s_Title: c_Entry.s_Title,
-                                                 e_Mode: FSActiveSetViewModel.FSMode.Read)
+                                                 e_Mode: FSActiveSetViewModel.FSMode.Endless)
                             }) {
                                 Image(systemName: "book.fill")
                                 Text("@CMENU_READ", tableName: "SSetList")

@@ -1,8 +1,8 @@
 //
 //  VActiveSet.swift
 //
-//  Copyright (C) 2020 Jens Broerken
-//  <jens.broerken@hs-augsburg.de>
+//  This file is part of the featherStack app project.
+//  See the AUTHORS file for Copyright information.
 //
 //  This program is free software; you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
@@ -52,7 +52,8 @@ struct FSActiveSetView: View {
                            f_Answered: { b_Result in
                                 if let c_Current = self.c_Model.c_Card {
                                     // Set completion on current, decides reuse when returning
-                                    c_Current.b_Completed = (self.c_Model.e_Mode == .Practice ? b_Result : true)
+                                    // NOTE: Endless mode never completes sets, keep reading idefinitly
+                                    c_Current.b_Completed = (self.c_Model.e_Mode == .Standard ? b_Result : false)
                             }
                             self.c_Model.NextCard()
                 })

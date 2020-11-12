@@ -28,8 +28,8 @@
 "@ADD_BUTTON" = "Add a card set ...";
 
 // Card Set Context Menu
-"@CMENU_PRACTICE" = "Practice";
-"@CMENU_READ" = "Read";
+"@CMENU_PRACTICE" = "Standard";
+"@CMENU_READ" = "Endless";
 
 // Import Failed Alert
 "@ALERT_TITLE" = "Import Failed";
