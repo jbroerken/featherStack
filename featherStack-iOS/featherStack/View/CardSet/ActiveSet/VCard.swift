@@ -104,7 +104,9 @@ struct FSCardView: View {
                 }
             } else {
                 Text(self.c_Model.s_Data)
-                    .font(.title)
+                    .font(.system(size: 48))
+                    .bold()
+                    .lineLimit(1)
                     .foregroundColor(Color("CardTitleTextColor"))
                     .minimumScaleFactor(0.01)
                     .padding()
