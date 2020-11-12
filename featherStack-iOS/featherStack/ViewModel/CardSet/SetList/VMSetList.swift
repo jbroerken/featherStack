@@ -1,8 +1,8 @@
 //
 //  VMSetList.swift
 //
-//  Copyright (C) 2020 Jens Broerken
-//  <jens.broerken@hs-augsburg.de>
+//  This file is part of the featherStack app project.
+//  See the AUTHORS file for Copyright information.
 //
 //  This program is free software; you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
@@ -38,7 +38,7 @@ final class FSSetListViewModel: ObservableObject {
         
         fileprivate(set) var i_Entry: Int = 0
         fileprivate(set) var s_Title: String = ""
-        fileprivate(set) var e_Mode: FSActiveSetViewModel.FSMode = .Practice
+        fileprivate(set) var e_Mode: FSActiveSetViewModel.FSMode = .Standard
     }
     
     //************************************************************
@@ -106,7 +106,7 @@ final class FSSetListViewModel: ObservableObject {
      *
      *  - Parameter i_Entry: The set entry index.
      *  - Parameter s_Title: The set title.
-     *  - Parameter e_Mode: The set mode.
+     *  - Parameter e_Mode: The set view mode.
      */
     
     func SelectEntry(i_Entry: Int, s_Title: String, e_Mode: FSActiveSetViewModel.FSMode) -> Void {

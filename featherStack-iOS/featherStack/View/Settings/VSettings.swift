@@ -1,8 +1,8 @@
 //
 //  VSettings.swift
 //
-//  Copyright (C) 2020 Jens Broerken
-//  <jens.broerken@hs-augsburg.de>
+//  This file is part of the featherStack app project.
+//  See the AUTHORS file for Copyright information.
 //
 //  This program is free software; you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by

@@ -28,8 +28,8 @@
 "@ADD_BUTTON" = "Sammlung hinzufügen ...";
 
 // Card Set Context Menu
-"@CMENU_PRACTICE" = "Übung";
-"@CMENU_READ" = "Wiederholung";
+"@CMENU_PRACTICE" = "Standard";
+"@CMENU_READ" = "Endlos";
 
 // Import Failed Alert
 "@ALERT_TITLE" = "Import Fehlgeschlagen";

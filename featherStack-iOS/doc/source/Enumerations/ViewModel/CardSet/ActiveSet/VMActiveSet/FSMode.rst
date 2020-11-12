@@ -22,10 +22,10 @@ Identifiers
 
     * - Name
       - Description
-    * - Practice
-      - The sets pays attention to right and wrong answers.
-    * - Read
-      - The set does not differenciate between right and wrong answers.
+    * - Standard
+      - The sets will complete once all cards have been answered correctly.
+    * - Endless
+      - The set continues to be active until the user returns manually.
 
 
 Functions
